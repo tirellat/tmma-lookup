@@ -290,16 +290,38 @@
       clearResults();
       renderMemberList(selectedStreetKey, precinct, rawNum);
     } else {
-      // Not found — show helpful message + fallback buttons
+      // Not found — hide house row, show friendly inline precinct picker
+      hideHouseRow();
       clearResults();
-      houseHint.className = 'house-hint';
-      houseHint.style.color = 'var(--color-error, #c0392b)';
-      houseHint.textContent = 'House number ' + rawNum + ' wasn\'t found in our records for ' + toTitleCase(selectedStreetKey) + '. Select your precinct below, or check the precinct map.';
-      showMultiPrecinctChoice(selectedStreetKey, precincts);
+      showNotFoundPrecinct(selectedStreetKey, precincts, rawNum);
     }
   }
 
   // ── Display functions ──────────────────────────────────────
+
+  function showNotFoundPrecinct(streetKey, precincts, houseNum) {
+    // Friendly inline precinct picker when house# isn't in our voter data
+    // (house may exist but have no registered voters, or be a new address)
+    multiArea.innerHTML = `
+      <div class="multi-precinct-prompt">
+        <h3>Select your precinct for ${toTitleCase(streetKey)}</h3>
+        <p>House number <strong>${escapeHtml(houseNum)}</strong> wasn't in our voter records for this street,
+           but the street spans multiple precincts. Select yours below, or check the
+           <a href="https://www.winchester.us/213/Precinct-Maps" target="_blank" rel="noopener">precinct maps</a>
+           to confirm.</p>
+        <div class="precinct-btn-group">
+          ${precincts.map(p => `<button class="precinct-select-btn" data-precinct="${p}">Precinct ${p}</button>`).join('')}
+        </div>
+      </div>`;
+    multiArea.querySelectorAll('.precinct-select-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const p = parseInt(btn.getAttribute('data-precinct'), 10);
+        multiArea.innerHTML = '';
+        renderMemberList(streetKey, p, houseNum);
+      });
+    });
+  }
+
   function clearResults() {
     statusArea.innerHTML = '';
     multiArea.innerHTML = '';
