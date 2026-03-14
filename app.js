@@ -407,12 +407,11 @@
       const indicator = expiring
         ? '<span class="term-indicator expires-soon" title="Term ends ' + m.termEnds + '"></span>'
         : '<span class="term-indicator ok" title="Term ends ' + m.termEnds + '"></span>';
-      const tmmaUrl = 'https://www.winchestertmma.org/directory/by-name';
       return `
-        <a href="${tmmaUrl}" target="_blank" rel="noopener" class="member-card" title="View on TMMA website">
+        <div class="member-card">
           <div class="member-name">${escapeHtml(m.first)} ${escapeHtml(m.last)}</div>
           <div class="member-term">${indicator}Term ends ${m.termEnds}</div>
-        </a>`;
+        </div>`;
     }).join('');
 
     const addressLabel = houseNum
