@@ -1,0 +1,3883 @@
+{
+  "streets": {
+    "ADAMS RD": [
+      8
+    ],
+    "AGAWAM RD": [
+      5
+    ],
+    "AINSWORTH RD": [
+      1
+    ],
+    "ALBAMONT RD": [
+      5
+    ],
+    "ALBEN ST": [
+      1
+    ],
+    "ALDEN LN": [
+      4
+    ],
+    "ALESWORTH AVE": [
+      7
+    ],
+    "ALICE LN": [
+      3
+    ],
+    "ALLEN RD": [
+      4
+    ],
+    "AMBERWOOD DR": [
+      6
+    ],
+    "ANDREA CIR": [
+      1
+    ],
+    "ANDREWS RD": [
+      5
+    ],
+    "APPALACHIAN RD": [
+      1
+    ],
+    "AQUINAS PATH": [
+      6
+    ],
+    "ARBOR LN": [
+      8
+    ],
+    "ARDLEY PL": [
+      7
+    ],
+    "ARDLEY RD": [
+      7
+    ],
+    "ARICIA LN": [
+      6
+    ],
+    "ARISTOTLE DR": [
+      6
+    ],
+    "ARLINGTON ST": [
+      5
+    ],
+    "ARTHUR ST": [
+      8
+    ],
+    "ATHERTON RD": [
+      6
+    ],
+    "AZALEA RD": [
+      6
+    ],
+    "BACON ST": [
+      3,
+      4
+    ],
+    "BALDWIN ST": [
+      8
+    ],
+    "BATES RD": [
+      1
+    ],
+    "BELKNAP TER": [
+      8
+    ],
+    "BELLEVUE AVE": [
+      1
+    ],
+    "BERKSHIRE DR": [
+      6
+    ],
+    "BIGELOW AVE": [
+      6
+    ],
+    "BIRCH LN": [
+      6
+    ],
+    "BLACK HORSE TER": [
+      3
+    ],
+    "BLOSSOM HILL RD": [
+      5
+    ],
+    "BONAD RD": [
+      1
+    ],
+    "BORDER ST": [
+      8
+    ],
+    "BRADFORD RD": [
+      8
+    ],
+    "BRANTWOOD RD": [
+      7
+    ],
+    "BRIARWOOD LN": [
+      4
+    ],
+    "BRIDGE ST": [
+      3
+    ],
+    "BROOKS ST": [
+      4
+    ],
+    "BROOKSIDE AVE": [
+      1
+    ],
+    "BRUCE RD": [
+      4
+    ],
+    "BUCKMAN DR": [
+      6
+    ],
+    "BUSHCLIFF TER": [
+      2
+    ],
+    "CABOT ST": [
+      7
+    ],
+    "CALUMET RD": [
+      7
+    ],
+    "CAMBRIDGE ST": [
+      5,
+      7
+    ],
+    "CANAL ST": [
+      8
+    ],
+    "CANTERBURY RD": [
+      4
+    ],
+    "CAPRI TER": [
+      6
+    ],
+    "CARDINAL ST": [
+      1
+    ],
+    "CARRIAGE LN": [
+      6
+    ],
+    "CARTER ST": [
+      8
+    ],
+    "CEDAR ST": [
+      2
+    ],
+    "CENTRAL GRN": [
+      3
+    ],
+    "CENTRAL ST": [
+      3
+    ],
+    "CHAPIN CT": [
+      2
+    ],
+    "CHAPIN ST": [
+      2
+    ],
+    "CHARDON RD": [
+      4
+    ],
+    "CHARLES RD": [
+      8
+    ],
+    "CHESTER ST": [
+      2
+    ],
+    "CHESTERFORD RD": [
+      7
+    ],
+    "CHESTERFORD TER": [
+      7
+    ],
+    "CHESTNUT ST": [
+      4
+    ],
+    "CHISHOLM RD": [
+      1
+    ],
+    "CHURCH ST": [
+      7
+    ],
+    "CHURCHILL CIR": [
+      1
+    ],
+    "CHURCHILL RD": [
+      1
+    ],
+    "CLARK ST": [
+      8
+    ],
+    "CLEARWATER RD": [
+      4
+    ],
+    "CLEMATIS ST": [
+      1
+    ],
+    "CLEVELAND RD": [
+      8
+    ],
+    "CLIFF ST": [
+      3
+    ],
+    "COBBLESTONE DR": [
+      8
+    ],
+    "COLLAMORE ST": [
+      1
+    ],
+    "COLUMBUS RD": [
+      2
+    ],
+    "CONANT RD": [
+      2
+    ],
+    "COOLIDGE RD": [
+      6
+    ],
+    "COPLEY ST": [
+      7
+    ],
+    "COTTAGE AVE": [
+      7
+    ],
+    "COUNTRY LN": [
+      5
+    ],
+    "COX RD": [
+      6
+    ],
+    "CRANSTON RD": [
+      4
+    ],
+    "CRESCENT RD": [
+      3
+    ],
+    "CROSS ST": [
+      1,
+      8
+    ],
+    "CURTIS CIR": [
+      3
+    ],
+    "CURTIS ST": [
+      3
+    ],
+    "CUTTING ST": [
+      3
+    ],
+    "D ST": [
+      1
+    ],
+    "DANA AVE": [
+      1
+    ],
+    "DARTMOUTH ST": [
+      7
+    ],
+    "DAVEY LN": [
+      3
+    ],
+    "DAWES AVE": [
+      6
+    ],
+    "DEAN RD": [
+      1
+    ],
+    "DENNETT RD": [
+      4
+    ],
+    "DIX ST": [
+      3
+    ],
+    "DIX TER": [
+      3
+    ],
+    "DOTHAN ST": [
+      5
+    ],
+    "DREXEL AVE": [
+      7
+    ],
+    "DUNHAM ST": [
+      2
+    ],
+    "DUNSTER LN": [
+      5
+    ],
+    "EAST ST": [
+      8
+    ],
+    "EATON CT": [
+      2
+    ],
+    "EATON ST": [
+      2,
+      3
+    ],
+    "EDGEHILL RD": [
+      4
+    ],
+    "EDGEWATER PL": [
+      5
+    ],
+    "EDWARD DR": [
+      5
+    ],
+    "ELM ST": [
+      3
+    ],
+    "ELMWOOD AVE": [
+      3
+    ],
+    "EMERSON CT": [
+      2
+    ],
+    "EMERSON RD": [
+      5
+    ],
+    "ENGLEWOOD RD": [
+      1
+    ],
+    "EUCLID AVE": [
+      1
+    ],
+    "EUGENE DR": [
+      1
+    ],
+    "EVERELL RD": [
+      4
+    ],
+    "EVERETT AVE": [
+      7
+    ],
+    "FAIRFIELD PL": [
+      8
+    ],
+    "FAIRLANE TER": [
+      6
+    ],
+    "FAIRMOUNT ST": [
+      1
+    ],
+    "FAIRVIEW TER": [
+      3
+    ],
+    "FARROW ST": [
+      8
+    ],
+    "FELLS RD": [
+      1
+    ],
+    "FELSDALE CLOSE": [
+      4
+    ],
+    "FENWICK RD": [
+      4
+    ],
+    "FERNWAY": [
+      5
+    ],
+    "FERNWAY TER": [
+      5
+    ],
+    "FIELDSTONE DR": [
+      6
+    ],
+    "FITZGERALD AVE": [
+      8
+    ],
+    "FLETCHER ST": [
+      7
+    ],
+    "FLORENCE ST": [
+      2
+    ],
+    "FOREST CIR": [
+      1
+    ],
+    "FOREST ST": [
+      1
+    ],
+    "FOX HUNT LN": [
+      5
+    ],
+    "FOXCROFT RD": [
+      7
+    ],
+    "FRANCIS CIRCUIT": [
+      3
+    ],
+    "FRANKLIN RD": [
+      4
+    ],
+    "GARDNER PL": [
+      7
+    ],
+    "GARFIELD AVE": [
+      1
+    ],
+    "GEORGE RD": [
+      8
+    ],
+    "GERSHON WAY": [
+      6
+    ],
+    "GINN RD": [
+      3
+    ],
+    "GIRARD RD": [
+      5
+    ],
+    "GLEN GRN": [
+      7
+    ],
+    "GLEN RD": [
+      7
+    ],
+    "GLENGARRY": [
+      3
+    ],
+    "GLENWOOD AVE": [
+      8
+    ],
+    "GODDU AVE": [
+      4
+    ],
+    "GOVERNORS AVE": [
+      2
+    ],
+    "GRANT RD": [
+      1
+    ],
+    "GRASSMERE AVE": [
+      3
+    ],
+    "GRAYSON RD": [
+      1
+    ],
+    "GRAYSTONE CIR": [
+      7
+    ],
+    "GREELEY RD": [
+      3
+    ],
+    "GROVE PL": [
+      4
+    ],
+    "GROVE ST": [
+      4
+    ],
+    "HANCOCK ST": [
+      2
+    ],
+    "HARRINGTON RD": [
+      7
+    ],
+    "HARRISON ST": [
+      7
+    ],
+    "HARVARD ST": [
+      1
+    ],
+    "HASTINGS RD": [
+      4
+    ],
+    "HAWTHORNE RD": [
+      6
+    ],
+    "HEMINGWAY ST": [
+      8
+    ],
+    "HENRY ST": [
+      5
+    ],
+    "HERRICK ST": [
+      4
+    ],
+    "HIGH ST": [
+      5
+    ],
+    "HIGHLAND AVE": [
+      1,
+      3
+    ],
+    "HIGHLAND TER": [
+      1
+    ],
+    "HIGHLAND VIEW AV": [
+      8
+    ],
+    "HILL ST": [
+      8
+    ],
+    "HILLCREST PKY": [
+      1
+    ],
+    "HILLSIDE AVE": [
+      3
+    ],
+    "HILLTOP RD": [
+      6
+    ],
+    "HINDS RD": [
+      1
+    ],
+    "HOLLAND ST": [
+      2
+    ],
+    "HOLLYWOOD RD": [
+      4
+    ],
+    "HOLTON ST": [
+      8
+    ],
+    "HORN POND BROOK": [
+      8
+    ],
+    "HUTCHINSON RD": [
+      5
+    ],
+    "INDIAN HILL RD": [
+      5
+    ],
+    "INVERNESS RD": [
+      7
+    ],
+    "IRVING ST": [
+      1
+    ],
+    "IVY CIR": [
+      7
+    ],
+    "JAMES ST": [
+      5
+    ],
+    "JEFFERSON RD": [
+      4
+    ],
+    "JOHNSON RD": [
+      6
+    ],
+    "KEENAN DR": [
+      1
+    ],
+    "KENDALL ST": [
+      3
+    ],
+    "KENILWORTH RD": [
+      1
+    ],
+    "KENWIN RD": [
+      1
+    ],
+    "KIRK ST": [
+      8
+    ],
+    "LAGRANGE ST": [
+      7
+    ],
+    "LAKE ST": [
+      3,
+      8
+    ],
+    "LAKEVIEW RD": [
+      5
+    ],
+    "LAKEVIEW TER": [
+      5
+    ],
+    "LANTERN LN": [
+      3
+    ],
+    "LAUREL HILL LN": [
+      1
+    ],
+    "LAUREL ST": [
+      7
+    ],
+    "LAWRENCE ST": [
+      7
+    ],
+    "LAWSON RD": [
+      4
+    ],
+    "LEBANON ST": [
+      1
+    ],
+    "LEDGEWOOD RD": [
+      3
+    ],
+    "LEDYARD RD": [
+      4
+    ],
+    "LESLIE RD": [
+      4
+    ],
+    "LEWIS RD": [
+      7
+    ],
+    "LINCOLN ST": [
+      2
+    ],
+    "LINCOLNSHIRE WAY": [
+      3
+    ],
+    "LINDEN ST": [
+      8
+    ],
+    "LLOYD ST": [
+      3
+    ],
+    "LOCHWAN ST": [
+      8
+    ],
+    "LOCKE ST": [
+      5
+    ],
+    "LOCKELAND RD": [
+      5
+    ],
+    "LONGFELLOW RD": [
+      6
+    ],
+    "LORENA RD": [
+      4
+    ],
+    "LORING AVE": [
+      8
+    ],
+    "LORING CT": [
+      8
+    ],
+    "MADISON AVE": [
+      4
+    ],
+    "MADISON AVE W": [
+      3
+    ],
+    "MAGNOLIA WAY": [
+      1
+    ],
+    "MAIN ST": [
+      3,
+      4
+    ],
+    "MANCHESTER RD": [
+      3
+    ],
+    "MANOMET RD": [
+      5
+    ],
+    "MAPLE RD": [
+      1
+    ],
+    "MARCHANT RD": [
+      4
+    ],
+    "MARION ST": [
+      1
+    ],
+    "MARSHALL RD": [
+      4
+    ],
+    "MASON ST": [
+      3
+    ],
+    "MAXWELL RD": [
+      3
+    ],
+    "MAYFLOWER RD": [
+      5
+    ],
+    "MCCALL RD": [
+      5
+    ],
+    "MEADOWCROFT RD": [
+      3
+    ],
+    "MERIDEN RD": [
+      4
+    ],
+    "MIDDLESEX ST": [
+      7
+    ],
+    "MT PLEASANT ST": [
+      3
+    ],
+    "MT VERNON ST": [
+      3
+    ],
+    "MYOPIA RD": [
+      5
+    ],
+    "MYRTLE ST": [
+      3
+    ],
+    "MYRTLE TER": [
+      3
+    ],
+    "MYSTIC AVE": [
+      3
+    ],
+    "MYSTIC VALLEY PKY": [
+      3,
+      5
+    ],
+    "NASSAU DR": [
+      6
+    ],
+    "NATHANIEL RD": [
+      1
+    ],
+    "NELSON ST": [
+      2
+    ],
+    "NEW MEADOWS RD": [
+      5
+    ],
+    "NEWTON ST": [
+      8
+    ],
+    "NILES LN": [
+      5
+    ],
+    "NORFOLK RD": [
+      7
+    ],
+    "NORTH BORDER RD": [
+      1
+    ],
+    "NORTH GATEWAY": [
+      4
+    ],
+    "NORWOOD ST": [
+      3
+    ],
+    "OAK ST": [
+      2
+    ],
+    "OAKLAND CIR": [
+      4
+    ],
+    "OLD OAK LN": [
+      3
+    ],
+    "OLDE LYME RD": [
+      6
+    ],
+    "OLDE VILLAGE DR": [
+      6
+    ],
+    "OLIVE ST": [
+      2
+    ],
+    "ONEIDA CIR": [
+      5
+    ],
+    "ONEIDA RD": [
+      5
+    ],
+    "ORIENT ST": [
+      1
+    ],
+    "OVERLOOK WAY": [
+      5
+    ],
+    "OX PASTURE": [
+      4
+    ],
+    "OXFORD ST": [
+      7
+    ],
+    "PALMER ST": [
+      7
+    ],
+    "PARK AVE": [
+      2
+    ],
+    "PARK RD": [
+      2
+    ],
+    "PARK ST": [
+      3
+    ],
+    "PARKER RD": [
+      7
+    ],
+    "PARTRIDGE LN": [
+      6
+    ],
+    "PENN RD": [
+      5
+    ],
+    "PEPPER HILL DR": [
+      5
+    ],
+    "PERKINS RD": [
+      4
+    ],
+    "PICKERING ST": [
+      8
+    ],
+    "PIERREPONT RD": [
+      4
+    ],
+    "PILGRIM DR": [
+      6
+    ],
+    "PINE GROVE PARK": [
+      8
+    ],
+    "PINE ST": [
+      3
+    ],
+    "PLATO TER": [
+      6
+    ],
+    "PLYMOUTH RD": [
+      5
+    ],
+    "POCAHONTAS DR": [
+      5
+    ],
+    "POLK RD": [
+      1
+    ],
+    "POND ST": [
+      7
+    ],
+    "PORTER ST": [
+      8
+    ],
+    "PRINCE AVE": [
+      2
+    ],
+    "PRISCILLA LN": [
+      4
+    ],
+    "PROSPECT ST": [
+      3
+    ],
+    "QUIGLEY CT": [
+      2
+    ],
+    "RANGELEY RD": [
+      3
+    ],
+    "RANGELEY RIDGE": [
+      3
+    ],
+    "RAVENSCROFT RD": [
+      5
+    ],
+    "RAVINE RD": [
+      3
+    ],
+    "RAYMOND PL": [
+      2
+    ],
+    "RED COACH LN": [
+      6
+    ],
+    "RESERVOIR ST": [
+      1
+    ],
+    "RICHARDSON ST": [
+      8
+    ],
+    "RIDGE ST": [
+      5,
+      6
+    ],
+    "RIDGEFIELD RD": [
+      4
+    ],
+    "RIDGEWAY": [
+      2
+    ],
+    "RISLEY RD": [
+      4
+    ],
+    "RIVER ST": [
+      2
+    ],
+    "ROBERTS RD": [
+      6
+    ],
+    "ROBINHOOD RD": [
+      5,
+      6
+    ],
+    "ROBINSON CIR": [
+      5
+    ],
+    "ROBINSON PARK": [
+      5
+    ],
+    "ROCK AVE": [
+      8
+    ],
+    "ROCKY LEDGE TER": [
+      6
+    ],
+    "ROYAL ST": [
+      8
+    ],
+    "ROYALSTON AVE": [
+      1
+    ],
+    "RUMFORD ST": [
+      8
+    ],
+    "RUSSELL RD": [
+      8
+    ],
+    "RUSSET LN": [
+      6
+    ],
+    "SACHEM RD": [
+      5
+    ],
+    "SALEM ST": [
+      8
+    ],
+    "SALISBURY ST": [
+      7
+    ],
+    "SAMOSET RD": [
+      5
+    ],
+    "SANBORN PL": [
+      4
+    ],
+    "SANBORN ST": [
+      4
+    ],
+    "SARGENT RD": [
+      4
+    ],
+    "SAWMILL BROOK RD": [
+      1
+    ],
+    "SCHOOL ST": [
+      3
+    ],
+    "SENECA RD": [
+      5
+    ],
+    "SHEFFIELD RD": [
+      7
+    ],
+    "SHEFFIELD WEST": [
+      7
+    ],
+    "SHEPARD CT": [
+      8
+    ],
+    "SHERIDAN CIR": [
+      8
+    ],
+    "SHERMAN PL": [
+      8
+    ],
+    "SHERWOOD RD": [
+      4
+    ],
+    "SHORE RD": [
+      2
+    ],
+    "SIMONDS RD": [
+      6
+    ],
+    "SKILLINGS RD": [
+      2
+    ],
+    "SKY LINE DR": [
+      5
+    ],
+    "SOCRATES WAY": [
+      6
+    ],
+    "SOUTH BORDER RD": [
+      4
+    ],
+    "SOUTH GATEWAY": [
+      4
+    ],
+    "SPRUCE ST": [
+      2
+    ],
+    "SQUANTO RD": [
+      5
+    ],
+    "SQUIRE RD": [
+      6
+    ],
+    "ST AUGUSTINE CT": [
+      6
+    ],
+    "ST THOMAS MORE D": [
+      6
+    ],
+    "STANDISH LN": [
+      4
+    ],
+    "STEVENS ST": [
+      3
+    ],
+    "STONE AVE": [
+      1
+    ],
+    "STONEFIELD CIR": [
+      5
+    ],
+    "STOWELL RD": [
+      4
+    ],
+    "STRATFORD RD": [
+      7
+    ],
+    "SUMMER ST": [
+      2
+    ],
+    "SUMMIT AVE": [
+      3
+    ],
+    "SUNSET RD": [
+      1
+    ],
+    "SURREY RD": [
+      6
+    ],
+    "SUSSEX RD": [
+      4
+    ],
+    "SWAN RD": [
+      5
+    ],
+    "SWANTON ST": [
+      2,
+      8
+    ],
+    "SYLVESTER AVE": [
+      8
+    ],
+    "SYLVESTER CT": [
+      8
+    ],
+    "SYMMES RD": [
+      3
+    ],
+    "TAFT CIR": [
+      5
+    ],
+    "TAFT DR": [
+      5
+    ],
+    "TANGLEWOOD LN": [
+      6
+    ],
+    "TANIA CIR": [
+      6
+    ],
+    "THOMPSON ST": [
+      3
+    ],
+    "THOREAU CIR": [
+      5
+    ],
+    "THORNBERRY RD": [
+      6
+    ],
+    "THORNTON RD": [
+      5
+    ],
+    "TOWN WAY": [
+      4
+    ],
+    "TREMONT ST": [
+      2
+    ],
+    "TRINITY RD": [
+      5
+    ],
+    "TUFTS RD": [
+      1
+    ],
+    "UPLAND RD": [
+      8
+    ],
+    "VALLEY RD": [
+      1
+    ],
+    "VALLEYWOOD CIR": [
+      6
+    ],
+    "VERPLAST AVE": [
+      8
+    ],
+    "VIKING RD": [
+      5
+    ],
+    "VINE ST": [
+      3
+    ],
+    "VINSON CIR": [
+      6
+    ],
+    "WAGON WHEEL RD": [
+      6
+    ],
+    "WAINWRIGHT RD": [
+      6
+    ],
+    "WALNUT ST": [
+      3
+    ],
+    "WARE RD": [
+      1
+    ],
+    "WARREN ST": [
+      7
+    ],
+    "WASHINGTON ST": [
+      1,
+      2,
+      3
+    ],
+    "WATER ST": [
+      8
+    ],
+    "WATSON PL": [
+      8
+    ],
+    "WEBSTER ST": [
+      2
+    ],
+    "WEDGE POND RD": [
+      3
+    ],
+    "WEDGEMERE AVE": [
+      7
+    ],
+    "WELLINGTON RD": [
+      4
+    ],
+    "WENDELL ST": [
+      8
+    ],
+    "WEST CHARDON RD": [
+      4
+    ],
+    "WESTGATE RD": [
+      6
+    ],
+    "WESTLAND AVE": [
+      5
+    ],
+    "WESTLEY ST": [
+      2
+    ],
+    "WHITE ST": [
+      8
+    ],
+    "WICKFORD RD": [
+      7
+    ],
+    "WICKHAM RD": [
+      4
+    ],
+    "WILDWOOD ST": [
+      7
+    ],
+    "WILDWOOD TER": [
+      7
+    ],
+    "WILLIAMS CIR": [
+      8
+    ],
+    "WILLOW ST": [
+      3
+    ],
+    "WILLOWDALE RD": [
+      4
+    ],
+    "WILSON ST": [
+      1
+    ],
+    "WINCHESTER PL": [
+      3
+    ],
+    "WINCHESTER TER": [
+      3
+    ],
+    "WINCREST DR": [
+      6
+    ],
+    "WINDEMERE RD": [
+      6
+    ],
+    "WINDSONG LN": [
+      6
+    ],
+    "WINFORD WAY": [
+      4
+    ],
+    "WINSLOW RD": [
+      3
+    ],
+    "WINTER ST": [
+      2
+    ],
+    "WINTHROP ST": [
+      3
+    ],
+    "WINTHROP ST EXT": [
+      3
+    ],
+    "WOLCOTT RD": [
+      2
+    ],
+    "WOLCOTT TER": [
+      2
+    ],
+    "WOOD LN": [
+      5
+    ],
+    "WOODSIDE RD": [
+      7
+    ],
+    "WORTHEN RD": [
+      6
+    ],
+    "WRIGHT ST": [
+      5
+    ],
+    "WYMAN CT": [
+      7
+    ],
+    "YALE ST": [
+      7
+    ],
+    "YORK RD": [
+      4
+    ]
+  },
+  "streetRanges": {
+    "BACON ST": [
+      {
+        "min": 1,
+        "max": 144,
+        "precinct": 3,
+        "_sample_count": 62,
+        "_sample_nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "min": 1,
+        "max": 93,
+        "precinct": 4,
+        "_sample_count": 57,
+        "_sample_nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    ],
+    "CAMBRIDGE ST": [
+      {
+        "min": 5,
+        "max": 203,
+        "precinct": 5,
+        "_sample_count": 78,
+        "_sample_nums": [
+          5,
+          6,
+          8,
+          9,
+          11,
+          12,
+          15,
+          17,
+          18,
+          19
+        ]
+      },
+      {
+        "min": 10,
+        "max": 416,
+        "precinct": 7,
+        "_sample_count": 49,
+        "_sample_nums": [
+          10,
+          11,
+          12,
+          15,
+          17,
+          18,
+          19,
+          23,
+          26,
+          29
+        ]
+      }
+    ],
+    "CROSS ST": [
+      {
+        "min": 2,
+        "max": 219,
+        "precinct": 1,
+        "_sample_count": 54,
+        "_sample_nums": [
+          2,
+          3,
+          4,
+          6,
+          9,
+          10,
+          11,
+          12,
+          14,
+          15
+        ]
+      },
+      {
+        "min": 1,
+        "max": 400,
+        "precinct": 8,
+        "_sample_count": 61,
+        "_sample_nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          9,
+          11,
+          219
+        ]
+      }
+    ],
+    "EATON ST": [
+      {
+        "min": 1,
+        "max": 74,
+        "precinct": 2,
+        "_sample_count": 61,
+        "_sample_nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "min": 1,
+        "max": 186,
+        "precinct": 3,
+        "_sample_count": 52,
+        "_sample_nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    ],
+    "HIGHLAND AVE": [
+      {
+        "min": 2,
+        "max": 276,
+        "precinct": 1,
+        "_sample_count": 76,
+        "_sample_nums": [
+          2,
+          6,
+          14,
+          15,
+          19,
+          25,
+          29,
+          32,
+          36,
+          38
+        ]
+      },
+      {
+        "min": 2,
+        "max": 456,
+        "precinct": 3,
+        "_sample_count": 72,
+        "_sample_nums": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
+    ],
+    "LAKE ST": [
+      {
+        "min": 1,
+        "max": 61,
+        "precinct": 3,
+        "_sample_count": 31,
+        "_sample_nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "min": 1,
+        "max": 50,
+        "precinct": 8,
+        "_sample_count": 41,
+        "_sample_nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    ],
+    "MAIN ST": [
+      {
+        "min": 3,
+        "max": 995,
+        "precinct": 3,
+        "_sample_count": 47,
+        "_sample_nums": [
+          3,
+          4,
+          5,
+          7,
+          8,
+          616,
+          622,
+          624,
+          666,
+          778
+        ]
+      },
+      {
+        "min": 1,
+        "max": 614,
+        "precinct": 4,
+        "_sample_count": 73,
+        "_sample_nums": [
+          1,
+          2,
+          4,
+          9,
+          11,
+          14,
+          17,
+          21,
+          31,
+          39
+        ]
+      }
+    ],
+    "MYSTIC VALLEY PKY": [
+      {
+        "min": 1,
+        "max": 249,
+        "precinct": 3,
+        "_sample_count": 67,
+        "_sample_nums": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "min": 1,
+        "max": 84,
+        "precinct": 5,
+        "_sample_count": 55,
+        "_sample_nums": [
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      }
+    ],
+    "RIDGE ST": [
+      {
+        "min": 2,
+        "max": 174,
+        "precinct": 5,
+        "_sample_count": 59,
+        "_sample_nums": [
+          2,
+          3,
+          6,
+          7,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      }
+    ],
+    "ROBINHOOD RD": [
+      {
+        "min": 2,
+        "max": 251,
+        "precinct": 5,
+        "_sample_count": 48,
+        "_sample_nums": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "min": 1,
+        "max": 50,
+        "precinct": 6,
+        "_sample_count": 37,
+        "_sample_nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    ],
+    "SWANTON ST": [
+      {
+        "min": 1,
+        "max": 83,
+        "precinct": 2,
+        "_sample_count": 58,
+        "_sample_nums": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12
+        ]
+      },
+      {
+        "min": 44,
+        "max": 253,
+        "precinct": 8,
+        "_sample_count": 25,
+        "_sample_nums": [
+          44,
+          46,
+          55,
+          60,
+          61,
+          65,
+          66,
+          69,
+          71,
+          74
+        ]
+      }
+    ],
+    "WASHINGTON ST": [
+      {
+        "min": 1,
+        "max": 727,
+        "precinct": 1,
+        "_sample_count": 80,
+        "_sample_nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "min": 232,
+        "max": 428,
+        "precinct": 2,
+        "_sample_count": 59,
+        "_sample_nums": [
+          232,
+          233,
+          238,
+          244,
+          246,
+          247,
+          250,
+          259,
+          261,
+          265
+        ]
+      },
+      {
+        "min": 2,
+        "max": 232,
+        "precinct": 3,
+        "_sample_count": 65,
+        "_sample_nums": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      }
+    ]
+  },
+  "indexEntries": [
+    {
+      "street": "ADAMS RD",
+      "precinct": 8,
+      "book_page": 1
+    },
+    {
+      "street": "CHURCH ST",
+      "precinct": 7,
+      "book_page": 13
+    },
+    {
+      "street": "AGAWAM RD",
+      "precinct": 5,
+      "book_page": 1
+    },
+    {
+      "street": "CHURCHILL CIR",
+      "precinct": 1,
+      "book_page": 14
+    },
+    {
+      "street": "AINSWORTH RD",
+      "precinct": 1,
+      "book_page": 1
+    },
+    {
+      "street": "CHURCHILL RD",
+      "precinct": 1,
+      "book_page": 14
+    },
+    {
+      "street": "ALBAMONT RD",
+      "precinct": 5,
+      "book_page": 1
+    },
+    {
+      "street": "CLARK ST",
+      "precinct": 8,
+      "book_page": 15
+    },
+    {
+      "street": "ALBEN ST",
+      "precinct": 1,
+      "book_page": 1
+    },
+    {
+      "street": "CLEARWATER RD",
+      "precinct": 4,
+      "book_page": 15
+    },
+    {
+      "street": "ALDEN LN",
+      "precinct": 4,
+      "book_page": 1
+    },
+    {
+      "street": "CLEMATIS ST",
+      "precinct": 1,
+      "book_page": 15
+    },
+    {
+      "street": "ALESWORTH AVE",
+      "precinct": 7,
+      "book_page": 1
+    },
+    {
+      "street": "CLEVELAND RD",
+      "precinct": 8,
+      "book_page": 15
+    },
+    {
+      "street": "ALICE LN",
+      "precinct": 3,
+      "book_page": 1
+    },
+    {
+      "street": "CLIFF ST",
+      "precinct": 3,
+      "book_page": 15
+    },
+    {
+      "street": "ALLEN RD",
+      "precinct": 4,
+      "book_page": 2
+    },
+    {
+      "street": "COBBLESTONE DR",
+      "precinct": 8,
+      "book_page": 15
+    },
+    {
+      "street": "AMBERWOOD DR",
+      "precinct": 6,
+      "book_page": 2
+    },
+    {
+      "street": "COLLAMORE ST",
+      "precinct": 1,
+      "book_page": 15
+    },
+    {
+      "street": "ANDREA CIR",
+      "precinct": 1,
+      "book_page": 2
+    },
+    {
+      "street": "COLUMBUS RD",
+      "precinct": 2,
+      "book_page": 15
+    },
+    {
+      "street": "ANDREWS RD",
+      "precinct": 5,
+      "book_page": 2
+    },
+    {
+      "street": "CONANT RD",
+      "precinct": 2,
+      "book_page": 15
+    },
+    {
+      "street": "APPALACHIAN RD",
+      "precinct": 1,
+      "book_page": 3
+    },
+    {
+      "street": "COOLIDGE RD",
+      "precinct": 6,
+      "book_page": 16
+    },
+    {
+      "street": "AQUINAS PATH",
+      "precinct": 6,
+      "book_page": 3
+    },
+    {
+      "street": "COPLEY ST",
+      "precinct": 7,
+      "book_page": 16
+    },
+    {
+      "street": "ARBOR LN",
+      "precinct": 8,
+      "book_page": 3
+    },
+    {
+      "street": "COTTAGE AVE",
+      "precinct": 7,
+      "book_page": 16
+    },
+    {
+      "street": "ARDLEY PL",
+      "precinct": 7,
+      "book_page": 3
+    },
+    {
+      "street": "COUNTRY LN",
+      "precinct": 5,
+      "book_page": 16
+    },
+    {
+      "street": "ARDLEY RD",
+      "precinct": 7,
+      "book_page": 3
+    },
+    {
+      "street": "COX RD",
+      "precinct": 6,
+      "book_page": 16
+    },
+    {
+      "street": "ARICIA LN",
+      "precinct": 6,
+      "book_page": 3
+    },
+    {
+      "street": "CRANSTON RD",
+      "precinct": 4,
+      "book_page": 17
+    },
+    {
+      "street": "ARISTOTLE DR",
+      "precinct": 6,
+      "book_page": 3
+    },
+    {
+      "street": "CRESCENT RD",
+      "precinct": 3,
+      "book_page": 17
+    },
+    {
+      "street": "ARLINGTON ST",
+      "precinct": 5,
+      "book_page": 3
+    },
+    {
+      "street": "CROSS ST",
+      "precinct": 1,
+      "book_page": 17
+    },
+    {
+      "street": "ARTHUR ST",
+      "precinct": 8,
+      "book_page": 4
+    },
+    {
+      "street": "CROSS ST",
+      "precinct": 8,
+      "book_page": 18
+    },
+    {
+      "street": "ATHERTON RD",
+      "precinct": 6,
+      "book_page": 4
+    },
+    {
+      "street": "CURTIS CIR",
+      "precinct": 3,
+      "book_page": 18
+    },
+    {
+      "street": "AZALEA RD",
+      "precinct": 6,
+      "book_page": 4
+    },
+    {
+      "street": "CURTIS ST",
+      "precinct": 3,
+      "book_page": 18
+    },
+    {
+      "street": "BACON ST",
+      "precinct": 3,
+      "book_page": 4
+    },
+    {
+      "street": "CUTTING ST",
+      "precinct": 3,
+      "book_page": 18
+    },
+    {
+      "street": "BACON ST",
+      "precinct": 4,
+      "book_page": 5
+    },
+    {
+      "street": "D ST",
+      "precinct": 1,
+      "book_page": 18
+    },
+    {
+      "street": "BALDWIN ST",
+      "precinct": 8,
+      "book_page": 5
+    },
+    {
+      "street": "DANA AVE",
+      "precinct": 1,
+      "book_page": 18
+    },
+    {
+      "street": "BATES RD",
+      "precinct": 1,
+      "book_page": 5
+    },
+    {
+      "street": "DARTMOUTH ST",
+      "precinct": 7,
+      "book_page": 19
+    },
+    {
+      "street": "BELKNAP TER",
+      "precinct": 8,
+      "book_page": 5
+    },
+    {
+      "street": "DAVEY LN",
+      "precinct": 3,
+      "book_page": 19
+    },
+    {
+      "street": "BELLEVUE AVE",
+      "precinct": 1,
+      "book_page": 5
+    },
+    {
+      "street": "DAWES AVE",
+      "precinct": 6,
+      "book_page": 19
+    },
+    {
+      "street": "BERKSHIRE DR",
+      "precinct": 6,
+      "book_page": 5
+    },
+    {
+      "street": "DEAN RD",
+      "precinct": 1,
+      "book_page": 19
+    },
+    {
+      "street": "BIGELOW AVE",
+      "precinct": 6,
+      "book_page": 6
+    },
+    {
+      "street": "DENNETT RD",
+      "precinct": 4,
+      "book_page": 19
+    },
+    {
+      "street": "BIRCH LN",
+      "precinct": 6,
+      "book_page": 6
+    },
+    {
+      "street": "DIX ST",
+      "precinct": 3,
+      "book_page": 19
+    },
+    {
+      "street": "BLACK HORSE TER",
+      "precinct": 3,
+      "book_page": 6
+    },
+    {
+      "street": "DIX TER",
+      "precinct": 3,
+      "book_page": 19
+    },
+    {
+      "street": "BLOSSOM HILL RD",
+      "precinct": 5,
+      "book_page": 6
+    },
+    {
+      "street": "DOTHAN ST",
+      "precinct": 5,
+      "book_page": 20
+    },
+    {
+      "street": "BONAD RD",
+      "precinct": 1,
+      "book_page": 6
+    },
+    {
+      "street": "DREXEL AVE",
+      "precinct": 7,
+      "book_page": 20
+    },
+    {
+      "street": "BORDER ST",
+      "precinct": 8,
+      "book_page": 6
+    },
+    {
+      "street": "DUNHAM ST",
+      "precinct": 2,
+      "book_page": 20
+    },
+    {
+      "street": "BRADFORD RD",
+      "precinct": 8,
+      "book_page": 6
+    },
+    {
+      "street": "DUNSTER LN",
+      "precinct": 5,
+      "book_page": 20
+    },
+    {
+      "street": "BRANTWOOD RD",
+      "precinct": 7,
+      "book_page": 7
+    },
+    {
+      "street": "EAST ST",
+      "precinct": 8,
+      "book_page": 20
+    },
+    {
+      "street": "BRIARWOOD LN",
+      "precinct": 4,
+      "book_page": 7
+    },
+    {
+      "street": "EATON CT",
+      "precinct": 2,
+      "book_page": 20
+    },
+    {
+      "street": "BRIDGE ST",
+      "precinct": 3,
+      "book_page": 7
+    },
+    {
+      "street": "EATON ST",
+      "precinct": 2,
+      "book_page": 21
+    },
+    {
+      "street": "BROOKS ST",
+      "precinct": 4,
+      "book_page": 7
+    },
+    {
+      "street": "EATON ST",
+      "precinct": 3,
+      "book_page": 20
+    },
+    {
+      "street": "BROOKSIDE AVE",
+      "precinct": 1,
+      "book_page": 7
+    },
+    {
+      "street": "EDGEHILL RD",
+      "precinct": 4,
+      "book_page": 21
+    },
+    {
+      "street": "BRUCE RD",
+      "precinct": 4,
+      "book_page": 8
+    },
+    {
+      "street": "EDGEWATER PL",
+      "precinct": 5,
+      "book_page": 21
+    },
+    {
+      "street": "BUCKMAN DR",
+      "precinct": 6,
+      "book_page": 8
+    },
+    {
+      "street": "EDWARD DR",
+      "precinct": 5,
+      "book_page": 21
+    },
+    {
+      "street": "BUSHCLIFF TER",
+      "precinct": 2,
+      "book_page": 8
+    },
+    {
+      "street": "ELM ST",
+      "precinct": 3,
+      "book_page": 21
+    },
+    {
+      "street": "CABOT ST",
+      "precinct": 7,
+      "book_page": 8
+    },
+    {
+      "street": "ELMWOOD AVE",
+      "precinct": 3,
+      "book_page": 21
+    },
+    {
+      "street": "CALUMET RD",
+      "precinct": 7,
+      "book_page": 8
+    },
+    {
+      "street": "EMERSON CT",
+      "precinct": 2,
+      "book_page": 22
+    },
+    {
+      "street": "CAMBRIDGE ST",
+      "precinct": 5,
+      "book_page": 9
+    },
+    {
+      "street": "EMERSON RD",
+      "precinct": 5,
+      "book_page": 22
+    },
+    {
+      "street": "CAMBRIDGE ST",
+      "precinct": 7,
+      "book_page": 10
+    },
+    {
+      "street": "ENGLEWOOD RD",
+      "precinct": 1,
+      "book_page": 22
+    },
+    {
+      "street": "CANAL ST",
+      "precinct": 8,
+      "book_page": 10
+    },
+    {
+      "street": "EUCLID AVE",
+      "precinct": 1,
+      "book_page": 22
+    },
+    {
+      "street": "CANTERBURY RD",
+      "precinct": 4,
+      "book_page": 11
+    },
+    {
+      "street": "EUGENE DR",
+      "precinct": 1,
+      "book_page": 22
+    },
+    {
+      "street": "CAPRI TER",
+      "precinct": 6,
+      "book_page": 11
+    },
+    {
+      "street": "EVERELL RD",
+      "precinct": 4,
+      "book_page": 23
+    },
+    {
+      "street": "CARDINAL ST",
+      "precinct": 1,
+      "book_page": 11
+    },
+    {
+      "street": "EVERETT AVE",
+      "precinct": 7,
+      "book_page": 23
+    },
+    {
+      "street": "CARRIAGE LN",
+      "precinct": 6,
+      "book_page": 11
+    },
+    {
+      "street": "FAIRFIELD PL",
+      "precinct": 8,
+      "book_page": 23
+    },
+    {
+      "street": "CARTER ST",
+      "precinct": 8,
+      "book_page": 11
+    },
+    {
+      "street": "FAIRLANE TER",
+      "precinct": 6,
+      "book_page": 23
+    },
+    {
+      "street": "CEDAR ST",
+      "precinct": 2,
+      "book_page": 11
+    },
+    {
+      "street": "FAIRMOUNT ST",
+      "precinct": 1,
+      "book_page": 24
+    },
+    {
+      "street": "CENTRAL GRN",
+      "precinct": 3,
+      "book_page": 11
+    },
+    {
+      "street": "FAIRVIEW TER",
+      "precinct": 3,
+      "book_page": 24
+    },
+    {
+      "street": "CENTRAL ST",
+      "precinct": 3,
+      "book_page": 12
+    },
+    {
+      "street": "FARROW ST",
+      "precinct": 8,
+      "book_page": 24
+    },
+    {
+      "street": "CHAPIN CT",
+      "precinct": 2,
+      "book_page": 12
+    },
+    {
+      "street": "FELLS RD",
+      "precinct": 1,
+      "book_page": 24
+    },
+    {
+      "street": "CHAPIN ST",
+      "precinct": 2,
+      "book_page": 12
+    },
+    {
+      "street": "FELSDALE CLOSE",
+      "precinct": 4,
+      "book_page": 24
+    },
+    {
+      "street": "CHARDON RD",
+      "precinct": 4,
+      "book_page": 12
+    },
+    {
+      "street": "FENWICK RD",
+      "precinct": 4,
+      "book_page": 24
+    },
+    {
+      "street": "CHARLES RD",
+      "precinct": 8,
+      "book_page": 12
+    },
+    {
+      "street": "FERNWAY",
+      "precinct": 5,
+      "book_page": 25
+    },
+    {
+      "street": "CHESTER ST",
+      "precinct": 2,
+      "book_page": 12
+    },
+    {
+      "street": "FERNWAY TER",
+      "precinct": 5,
+      "book_page": 25
+    },
+    {
+      "street": "CHESTERFORD RD",
+      "precinct": 7,
+      "book_page": 13
+    },
+    {
+      "street": "FIELDSTONE DR",
+      "precinct": 6,
+      "book_page": 25
+    },
+    {
+      "street": "CHESTERFORD RD",
+      "precinct": 7,
+      "book_page": 13
+    },
+    {
+      "street": "FITZGERALD AVE",
+      "precinct": 8,
+      "book_page": 25
+    },
+    {
+      "street": "CHESTERFORD TER",
+      "precinct": 7,
+      "book_page": 13
+    },
+    {
+      "street": "FLETCHER ST",
+      "precinct": 7,
+      "book_page": 25
+    },
+    {
+      "street": "CHESTNUT ST",
+      "precinct": 4,
+      "book_page": 13
+    },
+    {
+      "street": "FLORENCE ST",
+      "precinct": 2,
+      "book_page": 25
+    },
+    {
+      "street": "CHISHOLM RD",
+      "precinct": 1,
+      "book_page": 13
+    },
+    {
+      "street": "FOREST CIR",
+      "precinct": 1,
+      "book_page": 26
+    },
+    {
+      "street": "FOREST ST",
+      "precinct": 1,
+      "book_page": 26
+    },
+    {
+      "street": "LAWRENCE ST",
+      "precinct": 7,
+      "book_page": 43
+    },
+    {
+      "street": "FOX HUNT LN",
+      "precinct": 5,
+      "book_page": 27
+    },
+    {
+      "street": "LAWSON RD",
+      "precinct": 4,
+      "book_page": 43
+    },
+    {
+      "street": "FOXCROFT RD",
+      "precinct": 7,
+      "book_page": 27
+    },
+    {
+      "street": "LEBANON ST",
+      "precinct": 1,
+      "book_page": 44
+    },
+    {
+      "street": "FRANCIS CIRCUIT",
+      "precinct": 3,
+      "book_page": 27
+    },
+    {
+      "street": "LEDGEWOOD RD",
+      "precinct": 3,
+      "book_page": 44
+    },
+    {
+      "street": "FRANKLIN RD",
+      "precinct": 4,
+      "book_page": 27
+    },
+    {
+      "street": "LEDYARD RD",
+      "precinct": 4,
+      "book_page": 44
+    },
+    {
+      "street": "GARDNER PL",
+      "precinct": 7,
+      "book_page": 28
+    },
+    {
+      "street": "LESLIE RD",
+      "precinct": 4,
+      "book_page": 45
+    },
+    {
+      "street": "GARFIELD AVE",
+      "precinct": 1,
+      "book_page": 28
+    },
+    {
+      "street": "LEWIS RD",
+      "precinct": 7,
+      "book_page": 45
+    },
+    {
+      "street": "GEORGE RD",
+      "precinct": 8,
+      "book_page": 28
+    },
+    {
+      "street": "LINCOLN ST",
+      "precinct": 2,
+      "book_page": 45
+    },
+    {
+      "street": "GERSHON WAY",
+      "precinct": 6,
+      "book_page": 28
+    },
+    {
+      "street": "LINCOLNSHIRE WAY",
+      "precinct": 3,
+      "book_page": 45
+    },
+    {
+      "street": "GINN RD",
+      "precinct": 3,
+      "book_page": 29
+    },
+    {
+      "street": "LINDEN ST",
+      "precinct": 8,
+      "book_page": 45
+    },
+    {
+      "street": "GIRARD RD",
+      "precinct": 5,
+      "book_page": 29
+    },
+    {
+      "street": "LLOYD ST",
+      "precinct": 3,
+      "book_page": 46
+    },
+    {
+      "street": "GLEN GRN",
+      "precinct": 7,
+      "book_page": 29
+    },
+    {
+      "street": "LOCHWAN ST",
+      "precinct": 8,
+      "book_page": 46
+    },
+    {
+      "street": "GLEN RD",
+      "precinct": 7,
+      "book_page": 29
+    },
+    {
+      "street": "LOCKE ST",
+      "precinct": 5,
+      "book_page": 46
+    },
+    {
+      "street": "GLENGARRY",
+      "precinct": 3,
+      "book_page": 30
+    },
+    {
+      "street": "LOCKELAND RD",
+      "precinct": 5,
+      "book_page": 46
+    },
+    {
+      "street": "GLENWOOD AVE",
+      "precinct": 8,
+      "book_page": 30
+    },
+    {
+      "street": "LONGFELLOW RD",
+      "precinct": 6,
+      "book_page": 46
+    },
+    {
+      "street": "GODDU AVE",
+      "precinct": 4,
+      "book_page": 30
+    },
+    {
+      "street": "LORENA RD",
+      "precinct": 4,
+      "book_page": 46
+    },
+    {
+      "street": "GOVERNORS AVE",
+      "precinct": 2,
+      "book_page": 30
+    },
+    {
+      "street": "LORING AVE",
+      "precinct": 8,
+      "book_page": 47
+    },
+    {
+      "street": "GRANT RD",
+      "precinct": 1,
+      "book_page": 30
+    },
+    {
+      "street": "LORING CT",
+      "precinct": 8,
+      "book_page": 47
+    },
+    {
+      "street": "GRASSMERE AVE",
+      "precinct": 3,
+      "book_page": 30
+    },
+    {
+      "street": "MADISON AVE",
+      "precinct": 4,
+      "book_page": 47
+    },
+    {
+      "street": "GRAYSON RD",
+      "precinct": 1,
+      "book_page": 30
+    },
+    {
+      "street": "MADISON AVE W",
+      "precinct": 3,
+      "book_page": 47
+    },
+    {
+      "street": "GRAYSTONE CIR",
+      "precinct": 7,
+      "book_page": 31
+    },
+    {
+      "street": "MAGNOLIA WAY",
+      "precinct": 1,
+      "book_page": 48
+    },
+    {
+      "street": "GREELEY RD",
+      "precinct": 3,
+      "book_page": 31
+    },
+    {
+      "street": "MAIN ST",
+      "precinct": 3,
+      "book_page": 49
+    },
+    {
+      "street": "GROVE PL",
+      "precinct": 4,
+      "book_page": 31
+    },
+    {
+      "street": "MAIN ST",
+      "precinct": 4,
+      "book_page": 48
+    },
+    {
+      "street": "GROVE ST",
+      "precinct": 4,
+      "book_page": 32
+    },
+    {
+      "street": "MANCHESTER RD",
+      "precinct": 3,
+      "book_page": 49
+    },
+    {
+      "street": "HANCOCK ST",
+      "precinct": 2,
+      "book_page": 32
+    },
+    {
+      "street": "MANOMET RD",
+      "precinct": 5,
+      "book_page": 50
+    },
+    {
+      "street": "HARRINGTON RD",
+      "precinct": 7,
+      "book_page": 32
+    },
+    {
+      "street": "MAPLE RD",
+      "precinct": 1,
+      "book_page": 50
+    },
+    {
+      "street": "HARRISON ST",
+      "precinct": 7,
+      "book_page": 33
+    },
+    {
+      "street": "MARCHANT RD",
+      "precinct": 4,
+      "book_page": 50
+    },
+    {
+      "street": "HARVARD ST",
+      "precinct": 1,
+      "book_page": 33
+    },
+    {
+      "street": "MARION ST",
+      "precinct": 1,
+      "book_page": 50
+    },
+    {
+      "street": "HASTINGS RD",
+      "precinct": 4,
+      "book_page": 33
+    },
+    {
+      "street": "MARSHALL RD",
+      "precinct": 4,
+      "book_page": 50
+    },
+    {
+      "street": "HAWTHORNE RD",
+      "precinct": 6,
+      "book_page": 33
+    },
+    {
+      "street": "MASON ST",
+      "precinct": 3,
+      "book_page": 50
+    },
+    {
+      "street": "HEMINGWAY ST",
+      "precinct": 8,
+      "book_page": 33
+    },
+    {
+      "street": "MAXWELL RD",
+      "precinct": 3,
+      "book_page": 50
+    },
+    {
+      "street": "HENRY ST",
+      "precinct": 5,
+      "book_page": 34
+    },
+    {
+      "street": "MAYFLOWER RD",
+      "precinct": 5,
+      "book_page": 50
+    },
+    {
+      "street": "HERRICK ST",
+      "precinct": 4,
+      "book_page": 34
+    },
+    {
+      "street": "MCCALL RD",
+      "precinct": 5,
+      "book_page": 51
+    },
+    {
+      "street": "HIGH ST",
+      "precinct": 5,
+      "book_page": 34
+    },
+    {
+      "street": "MEADOWCROFT RD",
+      "precinct": 3,
+      "book_page": 51
+    },
+    {
+      "street": "HIGHLAND AVE",
+      "precinct": 1,
+      "book_page": 35
+    },
+    {
+      "street": "MERIDEN RD",
+      "precinct": 4,
+      "book_page": 51
+    },
+    {
+      "street": "HIGHLAND AVE",
+      "precinct": 3,
+      "book_page": 37
+    },
+    {
+      "street": "MIDDLESEX ST",
+      "precinct": 7,
+      "book_page": 51
+    },
+    {
+      "street": "HIGHLAND TER",
+      "precinct": 1,
+      "book_page": 37
+    },
+    {
+      "street": "MT PLEASANT ST",
+      "precinct": 3,
+      "book_page": 52
+    },
+    {
+      "street": "HIGHLAND VIEW AV",
+      "precinct": 8,
+      "book_page": 37
+    },
+    {
+      "street": "MT VERNON ST",
+      "precinct": 3,
+      "book_page": 52
+    },
+    {
+      "street": "HILL ST",
+      "precinct": 8,
+      "book_page": 37
+    },
+    {
+      "street": "MYOPIA RD",
+      "precinct": 5,
+      "book_page": 52
+    },
+    {
+      "street": "HILLCREST PKY",
+      "precinct": 1,
+      "book_page": 37
+    },
+    {
+      "street": "MYRTLE ST",
+      "precinct": 3,
+      "book_page": 53
+    },
+    {
+      "street": "HILLSIDE AVE",
+      "precinct": 3,
+      "book_page": 38
+    },
+    {
+      "street": "MYRTLE TER",
+      "precinct": 3,
+      "book_page": 53
+    },
+    {
+      "street": "HILLTOP RD",
+      "precinct": 6,
+      "book_page": 38
+    },
+    {
+      "street": "MYSTIC AVE",
+      "precinct": 3,
+      "book_page": 53
+    },
+    {
+      "street": "HINDS RD",
+      "precinct": 1,
+      "book_page": 38
+    },
+    {
+      "street": "MYSTIC VALLEY PKY",
+      "precinct": 3,
+      "book_page": 54
+    },
+    {
+      "street": "HOLLAND ST",
+      "precinct": 2,
+      "book_page": 38
+    },
+    {
+      "street": "MYSTIC VALLEY PKY",
+      "precinct": 5,
+      "book_page": 53
+    },
+    {
+      "street": "HOLLYWOOD RD",
+      "precinct": 4,
+      "book_page": 39
+    },
+    {
+      "street": "NASSAU DR",
+      "precinct": 6,
+      "book_page": 54
+    },
+    {
+      "street": "HOLTON ST",
+      "precinct": 8,
+      "book_page": 39
+    },
+    {
+      "street": "NATHANIEL RD",
+      "precinct": 1,
+      "book_page": 54
+    },
+    {
+      "street": "HORN POND BROOK",
+      "precinct": 8,
+      "book_page": 39
+    },
+    {
+      "street": "NELSON ST",
+      "precinct": 2,
+      "book_page": 55
+    },
+    {
+      "street": "HUTCHINSON RD",
+      "precinct": 5,
+      "book_page": 39
+    },
+    {
+      "street": "NEW MEADOWS RD",
+      "precinct": 5,
+      "book_page": 55
+    },
+    {
+      "street": "INDIAN HILL RD",
+      "precinct": 5,
+      "book_page": 39
+    },
+    {
+      "street": "NEWTON ST",
+      "precinct": 8,
+      "book_page": 55
+    },
+    {
+      "street": "INVERNESS RD",
+      "precinct": 7,
+      "book_page": 39
+    },
+    {
+      "street": "NILES LN",
+      "precinct": 5,
+      "book_page": 55
+    },
+    {
+      "street": "IRVING ST",
+      "precinct": 1,
+      "book_page": 39
+    },
+    {
+      "street": "NORFOLK RD",
+      "precinct": 7,
+      "book_page": 55
+    },
+    {
+      "street": "IVY CIR",
+      "precinct": 7,
+      "book_page": 40
+    },
+    {
+      "street": "NORTH BORDER RD",
+      "precinct": 1,
+      "book_page": 55
+    },
+    {
+      "street": "JAMES ST",
+      "precinct": 5,
+      "book_page": 40
+    },
+    {
+      "street": "NORTH GATEWAY",
+      "precinct": 4,
+      "book_page": 56
+    },
+    {
+      "street": "JEFFERSON RD",
+      "precinct": 4,
+      "book_page": 40
+    },
+    {
+      "street": "NORWOOD ST",
+      "precinct": 3,
+      "book_page": 56
+    },
+    {
+      "street": "JOHNSON RD",
+      "precinct": 6,
+      "book_page": 41
+    },
+    {
+      "street": "OAK ST",
+      "precinct": 2,
+      "book_page": 56
+    },
+    {
+      "street": "KEENAN DR",
+      "precinct": 1,
+      "book_page": 41
+    },
+    {
+      "street": "OAKLAND CIR",
+      "precinct": 4,
+      "book_page": 56
+    },
+    {
+      "street": "KENDALL ST",
+      "precinct": 3,
+      "book_page": 42
+    },
+    {
+      "street": "OLD OAK LN",
+      "precinct": 3,
+      "book_page": 57
+    },
+    {
+      "street": "KENILWORTH RD",
+      "precinct": 1,
+      "book_page": 42
+    },
+    {
+      "street": "OLDE LYME RD",
+      "precinct": 6,
+      "book_page": 57
+    },
+    {
+      "street": "KENWIN RD",
+      "precinct": 1,
+      "book_page": 42
+    },
+    {
+      "street": "OLDE VILLAGE DR",
+      "precinct": 6,
+      "book_page": 57
+    },
+    {
+      "street": "KIRK ST",
+      "precinct": 8,
+      "book_page": 42
+    },
+    {
+      "street": "OLIVE ST",
+      "precinct": 2,
+      "book_page": 57
+    },
+    {
+      "street": "LAGRANGE ST",
+      "precinct": 7,
+      "book_page": 42
+    },
+    {
+      "street": "ONEIDA CIR",
+      "precinct": 5,
+      "book_page": 57
+    },
+    {
+      "street": "LAKE ST",
+      "precinct": 3,
+      "book_page": 43
+    },
+    {
+      "street": "ONEIDA RD",
+      "precinct": 5,
+      "book_page": 57
+    },
+    {
+      "street": "LAKE ST",
+      "precinct": 8,
+      "book_page": 42
+    },
+    {
+      "street": "ORIENT ST",
+      "precinct": 1,
+      "book_page": 57
+    },
+    {
+      "street": "LAKEVIEW RD",
+      "precinct": 5,
+      "book_page": 43
+    },
+    {
+      "street": "OVERLOOK WAY",
+      "precinct": 5,
+      "book_page": 58
+    },
+    {
+      "street": "LAKEVIEW TER",
+      "precinct": 5,
+      "book_page": 43
+    },
+    {
+      "street": "OX PASTURE",
+      "precinct": 4,
+      "book_page": 58
+    },
+    {
+      "street": "LANTERN LN",
+      "precinct": 3,
+      "book_page": 43
+    },
+    {
+      "street": "OXFORD ST",
+      "precinct": 7,
+      "book_page": 58
+    },
+    {
+      "street": "LAUREL HILL LN",
+      "precinct": 1,
+      "book_page": 43
+    },
+    {
+      "street": "PALMER ST",
+      "precinct": 7,
+      "book_page": 58
+    },
+    {
+      "street": "LAUREL ST",
+      "precinct": 7,
+      "book_page": 43
+    },
+    {
+      "street": "PARK AVE",
+      "precinct": 2,
+      "book_page": 58
+    },
+    {
+      "street": "PARK RD",
+      "precinct": 2,
+      "book_page": 59
+    },
+    {
+      "street": "SOCRATES WAY",
+      "precinct": 6,
+      "book_page": 70
+    },
+    {
+      "street": "PARK ST",
+      "precinct": 3,
+      "book_page": 59
+    },
+    {
+      "street": "SOUTH BORDER RD",
+      "precinct": 4,
+      "book_page": 70
+    },
+    {
+      "street": "PARKER RD",
+      "precinct": 7,
+      "book_page": 59
+    },
+    {
+      "street": "SOUTH GATEWAY",
+      "precinct": 4,
+      "book_page": 70
+    },
+    {
+      "street": "PARTRIDGE LN",
+      "precinct": 6,
+      "book_page": 59
+    },
+    {
+      "street": "SPRUCE ST",
+      "precinct": 2,
+      "book_page": 71
+    },
+    {
+      "street": "PENN RD",
+      "precinct": 5,
+      "book_page": 59
+    },
+    {
+      "street": "SQUANTO RD",
+      "precinct": 5,
+      "book_page": 71
+    },
+    {
+      "street": "PEPPER HILL DR",
+      "precinct": 5,
+      "book_page": 59
+    },
+    {
+      "street": "SQUIRE RD",
+      "precinct": 6,
+      "book_page": 71
+    },
+    {
+      "street": "PERKINS RD",
+      "precinct": 4,
+      "book_page": 59
+    },
+    {
+      "street": "ST AUGUSTINE CT",
+      "precinct": 6,
+      "book_page": 72
+    },
+    {
+      "street": "PICKERING ST",
+      "precinct": 8,
+      "book_page": 60
+    },
+    {
+      "street": "ST THOMAS MORE D",
+      "precinct": 6,
+      "book_page": 72
+    },
+    {
+      "street": "PIERREPONT RD",
+      "precinct": 4,
+      "book_page": 60
+    },
+    {
+      "street": "STANDISH LN",
+      "precinct": 4,
+      "book_page": 72
+    },
+    {
+      "street": "PILGRIM DR",
+      "precinct": 6,
+      "book_page": 60
+    },
+    {
+      "street": "STEVENS ST",
+      "precinct": 3,
+      "book_page": 72
+    },
+    {
+      "street": "PINE GROVE PARK",
+      "precinct": 8,
+      "book_page": 60
+    },
+    {
+      "street": "STONE AVE",
+      "precinct": 1,
+      "book_page": 72
+    },
+    {
+      "street": "PINE ST",
+      "precinct": 3,
+      "book_page": 60
+    },
+    {
+      "street": "STONEFIELD CIR",
+      "precinct": 5,
+      "book_page": 72
+    },
+    {
+      "street": "PLATO TER",
+      "precinct": 6,
+      "book_page": 61
+    },
+    {
+      "street": "STOWELL RD",
+      "precinct": 4,
+      "book_page": 72
+    },
+    {
+      "street": "PLYMOUTH RD",
+      "precinct": 5,
+      "book_page": 61
+    },
+    {
+      "street": "STRATFORD RD",
+      "precinct": 7,
+      "book_page": 73
+    },
+    {
+      "street": "POCAHONTAS DR",
+      "precinct": 5,
+      "book_page": 61
+    },
+    {
+      "street": "SUMMER ST",
+      "precinct": 2,
+      "book_page": 73
+    },
+    {
+      "street": "POLK RD",
+      "precinct": 1,
+      "book_page": 61
+    },
+    {
+      "street": "SUMMIT AVE",
+      "precinct": 3,
+      "book_page": 73
+    },
+    {
+      "street": "POND ST",
+      "precinct": 7,
+      "book_page": 61
+    },
+    {
+      "street": "SUNSET RD",
+      "precinct": 1,
+      "book_page": 73
+    },
+    {
+      "street": "PORTER ST",
+      "precinct": 8,
+      "book_page": 62
+    },
+    {
+      "street": "SURREY RD",
+      "precinct": 6,
+      "book_page": 73
+    },
+    {
+      "street": "PRINCE AVE",
+      "precinct": 2,
+      "book_page": 62
+    },
+    {
+      "street": "SUSSEX RD",
+      "precinct": 4,
+      "book_page": 74
+    },
+    {
+      "street": "PRISCILLA LN",
+      "precinct": 4,
+      "book_page": 62
+    },
+    {
+      "street": "SWAN RD",
+      "precinct": 5,
+      "book_page": 74
+    },
+    {
+      "street": "PROSPECT ST",
+      "precinct": 3,
+      "book_page": 62
+    },
+    {
+      "street": "SWANTON ST",
+      "precinct": 2,
+      "book_page": 74
+    },
+    {
+      "street": "QUIGLEY CT",
+      "precinct": 2,
+      "book_page": 62
+    },
+    {
+      "street": "SWANTON ST",
+      "precinct": 8,
+      "book_page": 77
+    },
+    {
+      "street": "RANGELEY RD",
+      "precinct": 3,
+      "book_page": 63
+    },
+    {
+      "street": "SYLVESTER AVE",
+      "precinct": 8,
+      "book_page": 77
+    },
+    {
+      "street": "RANGELEY RIDGE",
+      "precinct": 3,
+      "book_page": 63
+    },
+    {
+      "street": "SYLVESTER CT",
+      "precinct": 8,
+      "book_page": 78
+    },
+    {
+      "street": "RAVENSCROFT RD",
+      "precinct": 5,
+      "book_page": 63
+    },
+    {
+      "street": "SYMMES RD",
+      "precinct": 3,
+      "book_page": 78
+    },
+    {
+      "street": "RAVINE RD",
+      "precinct": 3,
+      "book_page": 63
+    },
+    {
+      "street": "TAFT CIR",
+      "precinct": 5,
+      "book_page": 78
+    },
+    {
+      "street": "RAYMOND PL",
+      "precinct": 2,
+      "book_page": 63
+    },
+    {
+      "street": "TAFT DR",
+      "precinct": 5,
+      "book_page": 78
+    },
+    {
+      "street": "RED COACH LN",
+      "precinct": 6,
+      "book_page": 63
+    },
+    {
+      "street": "TANGLEWOOD LN",
+      "precinct": 6,
+      "book_page": 78
+    },
+    {
+      "street": "RESERVOIR ST",
+      "precinct": 1,
+      "book_page": 63
+    },
+    {
+      "street": "TANIA CIR",
+      "precinct": 6,
+      "book_page": 78
+    },
+    {
+      "street": "RICHARDSON ST",
+      "precinct": 8,
+      "book_page": 64
+    },
+    {
+      "street": "THOMPSON ST",
+      "precinct": 3,
+      "book_page": 78
+    },
+    {
+      "street": "RIDGE ST",
+      "precinct": 5,
+      "book_page": 64
+    },
+    {
+      "street": "THOREAU CIR",
+      "precinct": 5,
+      "book_page": 78
+    },
+    {
+      "street": "RIDGE ST",
+      "precinct": 6,
+      "book_page": 65
+    },
+    {
+      "street": "THORNBERRY RD",
+      "precinct": 6,
+      "book_page": 78
+    },
+    {
+      "street": "RIDGEFIELD RD",
+      "precinct": 4,
+      "book_page": 65
+    },
+    {
+      "street": "THORNTON RD",
+      "precinct": 5,
+      "book_page": 79
+    },
+    {
+      "street": "RIDGEWAY",
+      "precinct": 2,
+      "book_page": 65
+    },
+    {
+      "street": "TOWN WAY",
+      "precinct": 4,
+      "book_page": 80
+    },
+    {
+      "street": "RISLEY RD",
+      "precinct": 4,
+      "book_page": 65
+    },
+    {
+      "street": "TREMONT ST",
+      "precinct": 2,
+      "book_page": 80
+    },
+    {
+      "street": "RIVER ST",
+      "precinct": 2,
+      "book_page": 65
+    },
+    {
+      "street": "TRINITY RD",
+      "precinct": 5,
+      "book_page": 80
+    },
+    {
+      "street": "ROBERTS RD",
+      "precinct": 6,
+      "book_page": 65
+    },
+    {
+      "street": "TUFTS RD",
+      "precinct": 1,
+      "book_page": 80
+    },
+    {
+      "street": "ROBINHOOD RD",
+      "precinct": 5,
+      "book_page": 65
+    },
+    {
+      "street": "UPLAND RD",
+      "precinct": 8,
+      "book_page": 80
+    },
+    {
+      "street": "ROBINHOOD RD",
+      "precinct": 6,
+      "book_page": 66
+    },
+    {
+      "street": "VALLEY RD",
+      "precinct": 1,
+      "book_page": 80
+    },
+    {
+      "street": "ROBINSON CIR",
+      "precinct": 5,
+      "book_page": 66
+    },
+    {
+      "street": "VALLEYWOOD CIR",
+      "precinct": 6,
+      "book_page": 80
+    },
+    {
+      "street": "ROBINSON PARK",
+      "precinct": 5,
+      "book_page": 66
+    },
+    {
+      "street": "VERPLAST AVE",
+      "precinct": 8,
+      "book_page": 80
+    },
+    {
+      "street": "ROCK AVE",
+      "precinct": 8,
+      "book_page": 66
+    },
+    {
+      "street": "VIKING RD",
+      "precinct": 5,
+      "book_page": 81
+    },
+    {
+      "street": "ROCKY LEDGE TER",
+      "precinct": 6,
+      "book_page": 66
+    },
+    {
+      "street": "VINE ST",
+      "precinct": 3,
+      "book_page": 81
+    },
+    {
+      "street": "ROYAL ST",
+      "precinct": 8,
+      "book_page": 66
+    },
+    {
+      "street": "VINSON CIR",
+      "precinct": 6,
+      "book_page": 81
+    },
+    {
+      "street": "ROYALSTON AVE",
+      "precinct": 1,
+      "book_page": 66
+    },
+    {
+      "street": "WAGON WHEEL RD",
+      "precinct": 6,
+      "book_page": 81
+    },
+    {
+      "street": "RUMFORD ST",
+      "precinct": 8,
+      "book_page": 66
+    },
+    {
+      "street": "WAINWRIGHT RD",
+      "precinct": 6,
+      "book_page": 81
+    },
+    {
+      "street": "RUSSELL RD",
+      "precinct": 8,
+      "book_page": 66
+    },
+    {
+      "street": "WALNUT ST",
+      "precinct": 3,
+      "book_page": 83
+    },
+    {
+      "street": "RUSSET LN",
+      "precinct": 6,
+      "book_page": 67
+    },
+    {
+      "street": "WARE RD",
+      "precinct": 1,
+      "book_page": 83
+    },
+    {
+      "street": "SACHEM RD",
+      "precinct": 5,
+      "book_page": 67
+    },
+    {
+      "street": "WARREN ST",
+      "precinct": 7,
+      "book_page": 83
+    },
+    {
+      "street": "SALEM ST",
+      "precinct": 8,
+      "book_page": 67
+    },
+    {
+      "street": "WASHINGTON ST",
+      "precinct": 1,
+      "book_page": 85
+    },
+    {
+      "street": "SALISBURY ST",
+      "precinct": 7,
+      "book_page": 67
+    },
+    {
+      "street": "WASHINGTON ST",
+      "precinct": 2,
+      "book_page": 84
+    },
+    {
+      "street": "SAMOSET RD",
+      "precinct": 5,
+      "book_page": 68
+    },
+    {
+      "street": "WASHINGTON ST",
+      "precinct": 3,
+      "book_page": 83
+    },
+    {
+      "street": "SANBORN PL",
+      "precinct": 4,
+      "book_page": 68
+    },
+    {
+      "street": "WATER ST",
+      "precinct": 8,
+      "book_page": 85
+    },
+    {
+      "street": "SANBORN ST",
+      "precinct": 4,
+      "book_page": 68
+    },
+    {
+      "street": "WATSON PL",
+      "precinct": 8,
+      "book_page": 85
+    },
+    {
+      "street": "SARGENT RD",
+      "precinct": 4,
+      "book_page": 68
+    },
+    {
+      "street": "WEBSTER ST",
+      "precinct": 2,
+      "book_page": 85
+    },
+    {
+      "street": "SAWMILL BROOK RD",
+      "precinct": 1,
+      "book_page": 68
+    },
+    {
+      "street": "WEDGE POND RD",
+      "precinct": 3,
+      "book_page": 86
+    },
+    {
+      "street": "SCHOOL ST",
+      "precinct": 3,
+      "book_page": 68
+    },
+    {
+      "street": "WEDGEMERE AVE",
+      "precinct": 7,
+      "book_page": 86
+    },
+    {
+      "street": "SENECA RD",
+      "precinct": 5,
+      "book_page": 68
+    },
+    {
+      "street": "WELLINGTON RD",
+      "precinct": 4,
+      "book_page": 86
+    },
+    {
+      "street": "SHEFFIELD RD",
+      "precinct": 7,
+      "book_page": 69
+    },
+    {
+      "street": "WENDELL ST",
+      "precinct": 8,
+      "book_page": 86
+    },
+    {
+      "street": "SHEFFIELD WEST",
+      "precinct": 7,
+      "book_page": 69
+    },
+    {
+      "street": "WEST CHARDON RD",
+      "precinct": 4,
+      "book_page": 87
+    },
+    {
+      "street": "SHEPARD CT",
+      "precinct": 8,
+      "book_page": 69
+    },
+    {
+      "street": "WESTGATE RD",
+      "precinct": 6,
+      "book_page": 87
+    },
+    {
+      "street": "SHERIDAN CIR",
+      "precinct": 8,
+      "book_page": 69
+    },
+    {
+      "street": "WESTLAND AVE",
+      "precinct": 5,
+      "book_page": 87
+    },
+    {
+      "street": "SHERMAN PL",
+      "precinct": 8,
+      "book_page": 70
+    },
+    {
+      "street": "WESTLEY ST",
+      "precinct": 2,
+      "book_page": 87
+    },
+    {
+      "street": "SHERWOOD RD",
+      "precinct": 4,
+      "book_page": 70
+    },
+    {
+      "street": "WHITE ST",
+      "precinct": 8,
+      "book_page": 88
+    },
+    {
+      "street": "SHORE RD",
+      "precinct": 2,
+      "book_page": 70
+    },
+    {
+      "street": "WICKFORD RD",
+      "precinct": 7,
+      "book_page": 88
+    },
+    {
+      "street": "SIMONDS RD",
+      "precinct": 6,
+      "book_page": 70
+    },
+    {
+      "street": "WICKHAM RD",
+      "precinct": 4,
+      "book_page": 88
+    },
+    {
+      "street": "SKILLINGS RD",
+      "precinct": 2,
+      "book_page": 70
+    },
+    {
+      "street": "WILDWOOD ST",
+      "precinct": 7,
+      "book_page": 88
+    },
+    {
+      "street": "SKY LINE DR",
+      "precinct": 5,
+      "book_page": 70
+    },
+    {
+      "street": "WILDWOOD TER",
+      "precinct": 7,
+      "book_page": 89
+    },
+    {
+      "street": "WILLIAMS CIR",
+      "precinct": 8,
+      "book_page": 89
+    },
+    {
+      "street": "WILLOW ST",
+      "precinct": 3,
+      "book_page": 89
+    },
+    {
+      "street": "WILLOWDALE RD",
+      "precinct": 4,
+      "book_page": 89
+    },
+    {
+      "street": "WILSON ST",
+      "precinct": 1,
+      "book_page": 89
+    },
+    {
+      "street": "WINCHESTER PL",
+      "precinct": 3,
+      "book_page": 90
+    },
+    {
+      "street": "WINCHESTER TER",
+      "precinct": 3,
+      "book_page": 90
+    },
+    {
+      "street": "WINCREST DR",
+      "precinct": 6,
+      "book_page": 90
+    },
+    {
+      "street": "WINDEMERE RD",
+      "precinct": 6,
+      "book_page": 90
+    },
+    {
+      "street": "WINDSONG LN",
+      "precinct": 6,
+      "book_page": 90
+    },
+    {
+      "street": "WINFORD WAY",
+      "precinct": 4,
+      "book_page": 90
+    },
+    {
+      "street": "WINSLOW RD",
+      "precinct": 3,
+      "book_page": 90
+    },
+    {
+      "street": "WINTER ST",
+      "precinct": 2,
+      "book_page": 91
+    },
+    {
+      "street": "WINTHROP ST",
+      "precinct": 3,
+      "book_page": 91
+    },
+    {
+      "street": "WINTHROP ST EXT",
+      "precinct": 3,
+      "book_page": 91
+    },
+    {
+      "street": "WOLCOTT RD",
+      "precinct": 2,
+      "book_page": 91
+    },
+    {
+      "street": "WOLCOTT TER",
+      "precinct": 2,
+      "book_page": 91
+    },
+    {
+      "street": "WOOD LN",
+      "precinct": 5,
+      "book_page": 91
+    },
+    {
+      "street": "WOODSIDE RD",
+      "precinct": 7,
+      "book_page": 91
+    },
+    {
+      "street": "WORTHEN RD",
+      "precinct": 6,
+      "book_page": 92
+    },
+    {
+      "street": "WRIGHT ST",
+      "precinct": 5,
+      "book_page": 92
+    },
+    {
+      "street": "WYMAN CT",
+      "precinct": 7,
+      "book_page": 92
+    },
+    {
+      "street": "YALE ST",
+      "precinct": 7,
+      "book_page": 92
+    },
+    {
+      "street": "YORK RD",
+      "precinct": 4,
+      "book_page": 92
+    }
+  ]
+}
