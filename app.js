@@ -22,6 +22,24 @@
   const houseBtn    = document.getElementById('house-btn');
   const houseHint   = document.getElementById('house-hint');
 
+  // Map aside
+  const mapAside    = document.getElementById('map-aside');
+  const mapFrame    = document.getElementById('precinct-map-frame');
+  const mapTitle    = document.getElementById('map-aside-title');
+  const mapLink     = document.getElementById('map-aside-link');
+
+  // Precinct map URLs (from winchester.us)
+  const PRECINCT_MAP_URLS = {
+    1: 'https://www.winchester.us/DocumentCenter/View/237/Precinct-1-PDF',
+    2: 'https://www.winchester.us/DocumentCenter/View/238/Precinct-2-PDF',
+    3: 'https://www.winchester.us/DocumentCenter/View/239/Precinct-3-PDF',
+    4: 'https://www.winchester.us/DocumentCenter/View/240/Precinct-4-PDF',
+    5: 'https://www.winchester.us/DocumentCenter/View/241/Precinct-5-PDF',
+    6: 'https://www.winchester.us/DocumentCenter/View/242/Precinct-6-PDF',
+    7: 'https://www.winchester.us/DocumentCenter/View/243/Precinct-7-PDF-',
+    8: 'https://www.winchester.us/DocumentCenter/View/244/Precinct-8-PDF',
+  };
+
   // ── URL state helpers ────────────────────────────────────────
   function setUrlState(params) {
     const sp = new URLSearchParams(window.location.search);
@@ -320,6 +338,37 @@
 
   // ── Display functions ──────────────────────────────────────
 
+  // ── Precinct map ───────────────────────────────────────────
+  function showPrecinctMap(precinct) {
+    const url = PRECINCT_MAP_URLS[precinct];
+    if (!url) return;
+    mapTitle.textContent = 'Precinct ' + precinct + ' Map';
+    mapLink.href = url;
+    // Only reload iframe if precinct changed (avoid flicker)
+    if (mapFrame.src !== url) mapFrame.src = url;
+    mapAside.classList.remove('hidden');
+  }
+
+  // ── Quick-precinct buttons ─────────────────────────────────
+  document.querySelectorAll('.quick-pct-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const p = parseInt(btn.getAttribute('data-precinct'), 10);
+      // Clear street/house inputs and state
+      streetInput.value = '';
+      hideHouseRow();
+      selectedStreetKey = null;
+      hideSuggestions();
+      // Mark active button
+      document.querySelectorAll('.quick-pct-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      // Show members directly
+      setUrlState({ street: null, house: null, precinct: p });
+      clearResults();
+      showPrecinctMap(p);
+      renderMemberList(null, p);
+    });
+  });
+
   function showNotFoundPrecinct(streetKey, precincts, houseNum) {
     // Friendly inline precinct picker when house# isn't in our voter data
     // (house may exist but have no registered voters, or be a new address)
@@ -416,10 +465,16 @@
   function renderMemberList(streetKey, precinct, houseNum) {
     // Persist to URL so this result can be bookmarked / shared
     setUrlState({
-      street:   streetKey,
-      house:    houseNum || null,
+      street:   streetKey || null,
+      house:    houseNum  || null,
       precinct: precinct,
     });
+    // Highlight the matching quick-precinct button
+    document.querySelectorAll('.quick-pct-btn').forEach(b => {
+      b.classList.toggle('active', parseInt(b.getAttribute('data-precinct'), 10) === precinct);
+    });
+    // Show the precinct map in the aside
+    showPrecinctMap(precinct);
     const members = TMMA_DATA.members[precinct];
     if (!members) {
       statusArea.innerHTML = `<div class="status-msg error">No data found for Precinct ${precinct}.</div>`;
@@ -441,9 +496,9 @@
         </div>`;
     }).join('');
 
-    const addressLabel = houseNum
-      ? `${houseNum} ${toTitleCase(streetKey)}`
-      : toTitleCase(streetKey);
+    const addressLabel = streetKey
+      ? (houseNum ? `${houseNum} ${toTitleCase(streetKey)}` : toTitleCase(streetKey))
+      : null;
 
     resultsArea.innerHTML = `
       <div class="precinct-header">
@@ -451,7 +506,7 @@
           <div><span class="precinct-badge">Precinct ${precinct}</span></div>
           <div class="precinct-title">Town Meeting Members</div>
           <div class="precinct-meta">
-            ${members.length} elected members &middot; ${addressLabel}
+            ${members.length} elected members${addressLabel ? ' &middot; ' + addressLabel : ''}
           </div>
         </div>
         <div class="precinct-actions">
@@ -475,7 +530,7 @@
       </div>
       <p class="search-summary">
         Showing <strong>${members.length} Town Meeting Members</strong> for
-        <strong>${escapeHtml(addressLabel)}</strong> in <strong>Precinct ${precinct}</strong>.
+        ${addressLabel ? `<strong>${escapeHtml(addressLabel)}</strong> in ` : ''}<strong>Precinct ${precinct}</strong>.
         Data as of ${TMMA_DATA.dataAsOf}.
       </p>
       <div class="members-grid">${cards}</div>`;
@@ -497,17 +552,19 @@
   // ── Restore from URL on page load ──────────────────────────
   (function restoreFromUrl() {
     const { street, house, precinct } = getUrlState();
-    if (!street || !precinct) return;
-    // Validate street exists in data
-    const precincts = streets[street];
-    if (!precincts) return;
-    // Validate precinct is valid for that street
-    if (!precincts.includes(precinct)) return;
-    // Restore the UI
-    streetInput.value = toTitleCase(street);
-    if (house) houseInput.value = house;
-    selectedStreetKey = street;
-    renderMemberList(street, precinct, house || undefined);
+    if (!precinct || precinct < 1 || precinct > 8) return;
+    if (street) {
+      // Full address restore
+      const precincts = streets[street];
+      if (!precincts) return;
+      streetInput.value = toTitleCase(street);
+      if (house) houseInput.value = house;
+      selectedStreetKey = street;
+      renderMemberList(street, precinct, house || undefined);
+    } else {
+      // Precinct-only restore (from quick-precinct button bookmark)
+      renderMemberList(null, precinct);
+    }
   })();
 
 })();
