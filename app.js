@@ -22,6 +22,26 @@
   const houseBtn    = document.getElementById('house-btn');
   const houseHint   = document.getElementById('house-hint');
 
+  // ── URL state helpers ────────────────────────────────────────
+  function setUrlState(params) {
+    const sp = new URLSearchParams(window.location.search);
+    Object.entries(params).forEach(([k, v]) => {
+      if (v === null || v === undefined) sp.delete(k);
+      else sp.set(k, v);
+    });
+    const qs = sp.toString();
+    history.replaceState(null, '', qs ? '?' + qs : window.location.pathname);
+  }
+
+  function getUrlState() {
+    const sp = new URLSearchParams(window.location.search);
+    return {
+      street:   sp.get('street')   || '',
+      house:    sp.get('house')    || '',
+      precinct: sp.get('precinct') ? parseInt(sp.get('precinct'), 10) : null,
+    };
+  }
+
   // ── Dark mode toggle ───────────────────────────────────────
   (function () {
     const toggle = document.querySelector('[data-theme-toggle]');
@@ -98,9 +118,10 @@
   streetInput.addEventListener('input', () => {
     const val = streetInput.value.trim();
     activeIdx = -1;
-    // If user edits street, hide house row and reset
+    // If user edits street, hide house row, reset, and clear URL state
     hideHouseRow();
     selectedStreetKey = null;
+    setUrlState({ street: null, house: null, precinct: null });
     if (val.length < 2) {
       hideSuggestions();
       return;
@@ -393,6 +414,12 @@
   }
 
   function renderMemberList(streetKey, precinct, houseNum) {
+    // Persist to URL so this result can be bookmarked / shared
+    setUrlState({
+      street:   streetKey,
+      house:    houseNum || null,
+      precinct: precinct,
+    });
     const members = TMMA_DATA.members[precinct];
     if (!members) {
       statusArea.innerHTML = `<div class="status-msg error">No data found for Precinct ${precinct}.</div>`;
@@ -466,5 +493,21 @@
   function toTitleCase(str) {
     return str.toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
   }
+
+  // ── Restore from URL on page load ──────────────────────────
+  (function restoreFromUrl() {
+    const { street, house, precinct } = getUrlState();
+    if (!street || !precinct) return;
+    // Validate street exists in data
+    const precincts = streets[street];
+    if (!precincts) return;
+    // Validate precinct is valid for that street
+    if (!precincts.includes(precinct)) return;
+    // Restore the UI
+    streetInput.value = toTitleCase(street);
+    if (house) houseInput.value = house;
+    selectedStreetKey = street;
+    renderMemberList(street, precinct, house || undefined);
+  })();
 
 })();
