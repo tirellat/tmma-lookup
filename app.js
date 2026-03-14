@@ -344,8 +344,11 @@
     if (!url) return;
     mapTitle.textContent = 'Precinct ' + precinct + ' Map';
     mapLink.href = url;
-    // Only reload iframe if precinct changed (avoid flicker)
-    if (mapFrame.src !== url) mapFrame.src = url;
+    // Only reload iframe if precinct changed (avoid flicker on re-render)
+    if (mapFrame.getAttribute('data-loaded-precinct') !== String(precinct)) {
+      mapFrame.src = url;
+      mapFrame.setAttribute('data-loaded-precinct', String(precinct));
+    }
     mapAside.classList.remove('hidden');
   }
 
@@ -353,18 +356,11 @@
   document.querySelectorAll('.quick-pct-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const p = parseInt(btn.getAttribute('data-precinct'), 10);
-      // Clear street/house inputs and state
       streetInput.value = '';
       hideHouseRow();
       selectedStreetKey = null;
       hideSuggestions();
-      // Mark active button
-      document.querySelectorAll('.quick-pct-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      // Show members directly
-      setUrlState({ street: null, house: null, precinct: p });
       clearResults();
-      showPrecinctMap(p);
       renderMemberList(null, p);
     });
   });
