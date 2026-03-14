@@ -487,7 +487,7 @@ main { flex: 1; }
 /* Member grid */
 .members-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-4);
 }
 .member-card {
@@ -602,10 +602,14 @@ footer a:hover { color: var(--color-primary); }
   margin: -1px; overflow: hidden; clip: rect(0,0,0,0);
   white-space: nowrap; border-width: 0;
 }
+@media (max-width: 700px) {
+  .members-grid { grid-template-columns: repeat(2, 1fr); }
+}
 @media (max-width: 480px) {
   .search-row { flex-direction: column; }
   .search-btn { width: 100%; justify-content: center; }
   .container { padding-inline: var(--space-4); }
+  .members-grid { grid-template-columns: 1fr; }
 }
 </style>
 </head>
