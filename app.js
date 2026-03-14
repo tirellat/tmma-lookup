@@ -15,6 +15,13 @@
   const multiArea      = document.getElementById('multi-precinct-area');
   const resultsArea    = document.getElementById('results-area');
 
+  // House number UI
+  const houseLabel  = document.getElementById('house-label');
+  const houseRow    = document.getElementById('house-row');
+  const houseInput  = document.getElementById('house-input');
+  const houseBtn    = document.getElementById('house-btn');
+  const houseHint   = document.getElementById('house-hint');
+
   // ── Dark mode toggle ───────────────────────────────────────
   (function () {
     const toggle = document.querySelector('[data-theme-toggle]');
@@ -39,7 +46,11 @@
   })();
 
   // ── Street index helpers ───────────────────────────────────
-  const streets = TMMA_DATA.streets;
+  const streets        = TMMA_DATA.streets;
+  const housePrecincts = TMMA_DATA.housePrecincts || {};
+
+  // State: currently selected street key
+  let selectedStreetKey = null;
 
   // Normalise a street string to the canonical key format
   function normaliseStreet(raw) {
@@ -87,6 +98,9 @@
   streetInput.addEventListener('input', () => {
     const val = streetInput.value.trim();
     activeIdx = -1;
+    // If user edits street, hide house row and reset
+    hideHouseRow();
+    selectedStreetKey = null;
     if (val.length < 2) {
       hideSuggestions();
       return;
@@ -114,7 +128,7 @@
       if (activeIdx >= 0 && items[activeIdx]) {
         selectSuggestion(currentMatches[activeIdx]);
       } else {
-        doSearch();
+        doStreetSearch();
       }
     } else if (e.key === 'Escape') {
       hideSuggestions();
@@ -148,7 +162,7 @@
   function selectSuggestion(match) {
     streetInput.value = toTitleCase(match.key);
     hideSuggestions();
-    showPrecinct(normaliseStreet(match.key), match.precincts);
+    handleStreetSelected(normaliseStreet(match.key), match.precincts);
   }
 
   function hideSuggestions() {
@@ -162,10 +176,10 @@
     }
   });
 
-  // ── Search button ──────────────────────────────────────────
-  searchBtn.addEventListener('click', doSearch);
+  // ── Street search button ───────────────────────────────────
+  searchBtn.addEventListener('click', doStreetSearch);
 
-  function doSearch() {
+  function doStreetSearch() {
     hideSuggestions();
     const raw = streetInput.value.trim();
     if (!raw) {
@@ -175,21 +189,114 @@
     const normalised = normaliseStreet(raw);
     const exact = streets[normalised];
     if (exact) {
-      showPrecinct(normalised, exact);
+      handleStreetSelected(normalised, exact);
       return;
     }
     // Try partial match
     const matches = findMatches(raw);
     if (matches.length === 1) {
-      showPrecinct(matches[0].key, matches[0].precincts);
+      streetInput.value = toTitleCase(matches[0].key);
+      handleStreetSelected(matches[0].key, matches[0].precincts);
       return;
     }
     if (matches.length > 1) {
-      // Multiple streets found — show disambiguation
       showMultipleStreets(matches, raw);
       return;
     }
     showNotFound(raw);
+  }
+
+  // ── House number flow ──────────────────────────────────────
+
+  function handleStreetSelected(streetKey, precincts) {
+    selectedStreetKey = streetKey;
+    if (precincts.length === 1) {
+      // Single precinct — no house number needed
+      hideHouseRow();
+      clearResults();
+      renderMemberList(streetKey, precincts[0]);
+    } else {
+      // Multi-precinct — always ask for house number
+      showHouseRow(streetKey, precincts);
+    }
+  }
+
+  function showHouseRow(streetKey, precincts) {
+    houseLabel.classList.remove('hidden');
+    houseRow.classList.remove('hidden');
+    houseInput.value = '';
+    houseHint.className = 'house-hint';
+    houseHint.textContent = toTitleCase(streetKey) + ' spans precincts ' + precincts.join(', ') + '. Enter your house number to find your exact precinct.';
+    houseHint.classList.remove('hidden');
+    houseInput.focus();
+    // Clear results while waiting for house number
+    resultsSection.classList.add('hidden');
+    statusArea.innerHTML = '';
+    multiArea.innerHTML = '';
+    resultsArea.innerHTML = '';
+  }
+
+  function hideHouseRow() {
+    houseLabel.classList.add('hidden');
+    houseRow.classList.add('hidden');
+    houseHint.classList.add('hidden');
+    houseInput.value = '';
+  }
+
+  houseBtn.addEventListener('click', doHouseLookup);
+  houseInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); doHouseLookup(); }
+  });
+
+  function doHouseLookup() {
+    if (!selectedStreetKey) return;
+    const rawNum = houseInput.value.trim();
+    if (!rawNum) {
+      houseInput.focus();
+      return;
+    }
+
+    const streetHP = housePrecincts[selectedStreetKey];
+    const precincts = streets[selectedStreetKey] || [];
+
+    if (!streetHP) {
+      // No per-address data — fall back to choice buttons
+      clearResults();
+      showMultiPrecinctChoice(selectedStreetKey, precincts);
+      return;
+    }
+
+    // Normalise house number: strip leading zeros but preserve suffix (e.g. "12A")
+    const normNum = rawNum.toUpperCase().replace(/^0+(\d)/, '$1');
+
+    // Try exact match first
+    let precinct = streetHP[normNum];
+
+    // If not found, try stripping non-numeric suffix (e.g. "12A" → "12")
+    if (precinct === undefined) {
+      const numOnly = normNum.replace(/[^0-9]/g, '');
+      precinct = streetHP[numOnly];
+    }
+
+    // If still not found, try with original casing variations
+    if (precinct === undefined) {
+      // Try just the raw number as-is
+      precinct = streetHP[rawNum];
+    }
+
+    if (precinct !== undefined) {
+      // Found exact match
+      hideHouseRow();
+      clearResults();
+      renderMemberList(selectedStreetKey, precinct, rawNum);
+    } else {
+      // Not found — show helpful message + fallback buttons
+      clearResults();
+      houseHint.className = 'house-hint';
+      houseHint.style.color = 'var(--color-error, #c0392b)';
+      houseHint.textContent = 'House number ' + rawNum + ' wasn\'t found in our records for ' + toTitleCase(selectedStreetKey) + '. Select your precinct below, or check the precinct map.';
+      showMultiPrecinctChoice(selectedStreetKey, precincts);
+    }
   }
 
   // ── Display functions ──────────────────────────────────────
@@ -202,6 +309,7 @@
   }
 
   function showNotFound(query) {
+    hideHouseRow();
     clearResults();
     statusArea.innerHTML = `
       <div class="status-msg error">
@@ -220,6 +328,7 @@
   }
 
   function showMultipleStreets(matches, query) {
+    hideHouseRow();
     clearResults();
     const limited = matches.slice(0, 8);
     const buttons = limited.map(m =>
@@ -236,7 +345,7 @@
         const key = btn.getAttribute('data-key');
         streetInput.value = toTitleCase(key);
         multiArea.innerHTML = '';
-        showPrecinct(key, streets[key]);
+        handleStreetSelected(key, streets[key]);
       });
     });
   }
@@ -245,9 +354,9 @@
     multiArea.innerHTML = `
       <div class="multi-precinct-prompt">
         <h3>${toTitleCase(streetKey)} spans multiple precincts</h3>
-        <p>This street crosses a precinct boundary. Select your precinct below, or check the
+        <p>We couldn't pinpoint your exact precinct from that house number. Select your precinct below, or check the
            <a href="https://www.winchester.us/213/Precinct-Maps" target="_blank" rel="noopener">precinct maps</a>
-           to confirm which precinct your house number falls in.</p>
+           to confirm.</p>
         <div class="precinct-btn-group">
           ${precincts.map(p => `<button class="precinct-select-btn" data-precinct="${p}">Precinct ${p}</button>`).join('')}
         </div>
@@ -261,16 +370,7 @@
     });
   }
 
-  function showPrecinct(streetKey, precincts) {
-    clearResults();
-    if (precincts.length > 1) {
-      showMultiPrecinctChoice(streetKey, precincts);
-    } else {
-      renderMemberList(streetKey, precincts[0]);
-    }
-  }
-
-  function renderMemberList(streetKey, precinct) {
+  function renderMemberList(streetKey, precinct, houseNum) {
     const members = TMMA_DATA.members[precinct];
     if (!members) {
       statusArea.innerHTML = `<div class="status-msg error">No data found for Precinct ${precinct}.</div>`;
@@ -293,13 +393,17 @@
         </a>`;
     }).join('');
 
+    const addressLabel = houseNum
+      ? `${houseNum} ${toTitleCase(streetKey)}`
+      : toTitleCase(streetKey);
+
     resultsArea.innerHTML = `
       <div class="precinct-header">
         <div>
           <div><span class="precinct-badge">Precinct ${precinct}</span></div>
           <div class="precinct-title">Town Meeting Members</div>
           <div class="precinct-meta">
-            ${members.length} elected members &middot; Street: ${toTitleCase(streetKey)}
+            ${members.length} elected members &middot; ${addressLabel}
           </div>
         </div>
         <div class="precinct-actions">
@@ -322,8 +426,8 @@
         </div>
       </div>
       <p class="search-summary">
-        Showing <strong>${members.length} Town Meeting Members</strong> for residents of
-        <strong>${toTitleCase(streetKey)}</strong> in <strong>Precinct ${precinct}</strong>.
+        Showing <strong>${members.length} Town Meeting Members</strong> for
+        <strong>${escapeHtml(addressLabel)}</strong> in <strong>Precinct ${precinct}</strong>.
         Data as of ${TMMA_DATA.dataAsOf}.
       </p>
       <div class="members-grid">${cards}</div>`;
