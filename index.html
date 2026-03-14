@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Find your Winchester, MA Town Meeting Members by entering your street address. Look up all 24 elected representatives for your precinct.">
+<title>Winchester Town Meeting Member Lookup</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&display=swap" rel="stylesheet">
+
+<style>
+/* ─── Design Tokens ─────────────────────────────────── */
+:root {
+  /* Type scale */
+  --text-xs:   clamp(0.75rem,  0.7rem  + 0.25vw, 0.875rem);
+  --text-sm:   clamp(0.875rem, 0.8rem  + 0.35vw, 1rem);
+  --text-base: clamp(1rem,     0.95rem + 0.25vw, 1.125rem);
+  --text-lg:   clamp(1.125rem, 1rem    + 0.75vw, 1.5rem);
+  --text-xl:   clamp(1.5rem,   1.2rem  + 1.25vw, 2.25rem);
+  --text-2xl:  clamp(2rem,     1.2rem  + 2.5vw,  3.5rem);
+
+  /* Spacing */
+  --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem;
+  --space-4: 1rem;    --space-5: 1.25rem; --space-6: 1.5rem;
+  --space-8: 2rem;    --space-10: 2.5rem; --space-12: 3rem;
+  --space-16: 4rem;   --space-20: 5rem;   --space-24: 6rem;
+
+  /* Radius */
+  --radius-sm: 0.375rem; --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;  --radius-xl: 1rem;
+
+  /* Transitions */
+  --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Content width */
+  --content: 960px;
+
+  /* Fonts */
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body: 'DM Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ─── Palette: civic blue + warm cream ─────────────── */
+:root, [data-theme="light"] {
+  --color-bg:             #f5f4ef;
+  --color-surface:        #faf9f6;
+  --color-surface-2:      #ffffff;
+  --color-surface-offset: #eceae4;
+  --color-divider:        #dddbd4;
+  --color-border:         #d2cfc8;
+  --color-text:           #1c1a14;
+  --color-text-muted:     #6b6960;
+  --color-text-faint:     #b0aea8;
+  --color-text-inverse:   #f5f4ef;
+  --color-primary:        #1a4a7a;
+  --color-primary-hover:  #123660;
+  --color-primary-active: #0c2444;
+  --color-primary-highlight: #c8d8ea;
+  --color-accent:         #b5402a;
+  --color-accent-hover:   #8f3220;
+  --color-success:        #2e6b35;
+  --color-success-bg:     #d6ecd8;
+  --color-warning:        #7a5200;
+  --color-warning-bg:     #fef3c7;
+  --shadow-sm: 0 1px 3px rgba(28,26,20,0.07);
+  --shadow-md: 0 4px 12px rgba(28,26,20,0.09);
+  --shadow-lg: 0 12px 32px rgba(28,26,20,0.13);
+}
+
+[data-theme="dark"] {
+  --color-bg:             #151412;
+  --color-surface:        #1a1916;
+  --color-surface-2:      #1f1d1a;
+  --color-surface-offset: #1c1a17;
+  --color-divider:        #2a2825;
+  --color-border:         #353330;
+  --color-text:           #cccac5;
+  --color-text-muted:     #7a7870;
+  --color-text-faint:     #4e4c46;
+  --color-text-inverse:   #1a1916;
+  --color-primary:        #5b8ec8;
+  --color-primary-hover:  #3f72ad;
+  --color-primary-active: #2a5a91;
+  --color-primary-highlight: #1f3349;
+  --color-accent:         #e06b52;
+  --color-accent-hover:   #c05540;
+  --color-success:        #5aac62;
+  --color-success-bg:     #1e3b20;
+  --color-warning:        #d4a93a;
+  --color-warning-bg:     #3a2e10;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.2);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.3);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,0.4);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --color-bg: #151412; --color-surface: #1a1916;
+    --color-surface-2: #1f1d1a; --color-surface-offset: #1c1a17;
+    --color-divider: #2a2825; --color-border: #353330;
+    --color-text: #cccac5; --color-text-muted: #7a7870;
+    --color-text-faint: #4e4c46; --color-text-inverse: #1a1916;
+    --color-primary: #5b8ec8; --color-primary-hover: #3f72ad;
+    --color-primary-active: #2a5a91; --color-primary-highlight: #1f3349;
+    --color-accent: #e06b52; --color-accent-hover: #c05540;
+    --color-success: #5aac62; --color-success-bg: #1e3b20;
+    --color-warning: #d4a93a; --color-warning-bg: #3a2e10;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.2);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.3);
+    --shadow-lg: 0 12px 32px rgba(0,0,0,0.4);
+  }
+}
+
+/* ─── Reset ─────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html {
+  -webkit-text-size-adjust: none; text-size-adjust: none;
+  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility; scroll-behavior: smooth;
+  scroll-padding-top: var(--space-16);
+}
+body {
+  min-height: 100dvh; line-height: 1.6;
+  font-family: var(--font-body); font-size: var(--text-base);
+  color: var(--color-text); background-color: var(--color-bg);
+  display: flex; flex-direction: column;
+}
+img, svg { display: block; max-width: 100%; }
+input, button, select { font: inherit; color: inherit; }
+h1, h2, h3, h4, h5, h6 { text-wrap: balance; line-height: 1.2; }
+p, li { text-wrap: pretty; max-width: 72ch; }
+button { cursor: pointer; background: none; border: none; }
+a, button, input, select {
+  transition: color var(--transition), background var(--transition),
+              border-color var(--transition), box-shadow var(--transition),
+              opacity var(--transition);
+}
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px; border-radius: var(--radius-sm);
+}
+::selection { background: var(--color-primary-highlight); color: var(--color-text); }
+
+/* ─── Layout ─────────────────────────────────────────── */
+.container {
+  width: 100%; max-width: var(--content);
+  margin-inline: auto; padding-inline: var(--space-6);
+}
+main { flex: 1; }
+
+/* ─── Header ─────────────────────────────────────────── */
+.site-header {
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+  padding-block: var(--space-5);
+  box-shadow: var(--shadow-md);
+}
+.header-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: var(--space-4);
+}
+.logo-block { display: flex; align-items: center; gap: var(--space-3); }
+.logo-icon {
+  width: 44px; height: 44px; flex-shrink: 0;
+  background: rgba(255,255,255,0.15); border-radius: var(--radius-md);
+  display: flex; align-items: center; justify-content: center;
+}
+.site-title {
+  font-family: var(--font-display);
+  font-size: var(--text-lg); font-weight: 400;
+  color: var(--color-text-inverse);
+  line-height: 1.2;
+}
+.site-subtitle {
+  font-size: var(--text-xs); opacity: 0.75;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  margin-top: 2px;
+}
+.theme-toggle {
+  width: 36px; height: 36px; border-radius: var(--radius-md);
+  display: flex; align-items: center; justify-content: center;
+  color: rgba(255,255,255,0.8); background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2); flex-shrink: 0;
+}
+.theme-toggle:hover { background: rgba(255,255,255,0.2); color: #fff; }
+
+/* ─── Hero / Search Section ──────────────────────────── */
+.hero {
+  background: linear-gradient(160deg, var(--color-surface) 0%, var(--color-bg) 100%);
+  border-bottom: 1px solid var(--color-divider);
+  padding-block: clamp(var(--space-10), 6vw, var(--space-20));
+}
+.hero-content { max-width: 680px; }
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl); font-weight: 400;
+  color: var(--color-text); margin-bottom: var(--space-3);
+}
+.hero h1 em {
+  font-style: italic; color: var(--color-primary);
+}
+.hero-lead {
+  font-size: var(--text-base); color: var(--color-text-muted);
+  margin-bottom: var(--space-8); max-width: 60ch;
+}
+
+/* ─── Search Form ─────────────────────────────────────── */
+.search-card {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-md);
+  max-width: 640px;
+}
+.search-label {
+  display: block; font-size: var(--text-sm);
+  font-weight: 600; color: var(--color-text-muted);
+  letter-spacing: 0.04em; text-transform: uppercase;
+  margin-bottom: var(--space-2);
+}
+.search-row {
+  display: flex; gap: var(--space-2); align-items: stretch;
+}
+.search-input {
+  flex: 1; padding: var(--space-3) var(--space-4);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg); font-size: var(--text-base);
+  color: var(--color-text);
+}
+.search-input:focus {
+  border-color: var(--color-primary); outline: none;
+  box-shadow: 0 0 0 3px var(--color-primary-highlight);
+}
+.search-input::placeholder { color: var(--color-text-faint); }
+.search-btn {
+  padding: var(--space-3) var(--space-6);
+  background: var(--color-primary); color: #fff;
+  border-radius: var(--radius-md); font-weight: 600;
+  font-size: var(--text-sm); white-space: nowrap;
+  box-shadow: var(--shadow-sm);
+}
+.search-btn:hover { background: var(--color-primary-hover); }
+.search-btn:active { background: var(--color-primary-active); }
+.search-hint {
+  margin-top: var(--space-3); font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+.search-hint a { color: var(--color-primary); text-decoration: none; }
+.search-hint a:hover { text-decoration: underline; }
+
+/* ─── Suggestions dropdown ───────────────────────────── */
+.suggestions-wrap { position: relative; flex: 1; }
+.suggestions-list {
+  position: absolute; top: calc(100% + 4px); left: 0; right: 0;
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  z-index: 100; overflow-y: auto; max-height: 260px;
+  list-style: none;
+}
+.suggestions-list li {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm); cursor: pointer;
+  border-bottom: 1px solid var(--color-divider);
+}
+.suggestions-list li:last-child { border-bottom: none; }
+.suggestions-list li:hover,
+.suggestions-list li[aria-selected="true"] {
+  background: var(--color-primary-highlight);
+  color: var(--color-primary);
+}
+.suggestions-list.hidden { display: none; }
+.suggestion-precinct {
+  float: right; font-size: var(--text-xs);
+  color: var(--color-text-faint); font-weight: 500;
+}
+
+/* ─── Results Section ────────────────────────────────── */
+.results-section {
+  padding-block: clamp(var(--space-8), 5vw, var(--space-16));
+}
+.results-section.hidden { display: none; }
+
+/* Status messages */
+.status-msg {
+  padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-lg);
+  font-size: var(--text-base); margin-bottom: var(--space-6);
+  display: flex; align-items: flex-start; gap: var(--space-3);
+}
+.status-msg.error {
+  background: #fef2f2; border: 1px solid #fca5a5;
+  color: #991b1b;
+}
+[data-theme="dark"] .status-msg.error {
+  background: #2c1515; border-color: #7f1d1d; color: #fca5a5;
+}
+.status-msg.warning {
+  background: var(--color-warning-bg); border: 1px solid var(--color-warning);
+  color: var(--color-warning);
+}
+.status-msg.success {
+  background: var(--color-success-bg); border: 1px solid var(--color-success);
+  color: var(--color-success);
+}
+.status-msg.loading {
+  background: var(--color-surface); border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+}
+
+/* Precinct header */
+.precinct-header {
+  display: flex; align-items: flex-start;
+  justify-content: space-between; gap: var(--space-4);
+  flex-wrap: wrap;
+  padding-bottom: var(--space-5);
+  border-bottom: 2px solid var(--color-primary);
+  margin-bottom: var(--space-6);
+}
+.precinct-badge {
+  display: inline-flex; align-items: center; gap: var(--space-2);
+  background: var(--color-primary); color: #fff;
+  padding: var(--space-1) var(--space-4);
+  border-radius: var(--radius-full, 9999px);
+  font-size: var(--text-sm); font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.precinct-title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl); font-weight: 400;
+  color: var(--color-text); margin-top: var(--space-2);
+}
+.precinct-meta {
+  font-size: var(--text-sm); color: var(--color-text-muted);
+  margin-top: var(--space-1);
+}
+.precinct-actions { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+.btn-outline {
+  padding: var(--space-2) var(--space-4);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md); font-size: var(--text-sm);
+  color: var(--color-text-muted); font-weight: 500;
+  text-decoration: none; display: inline-flex; align-items: center;
+  gap: var(--space-2);
+}
+.btn-outline:hover {
+  border-color: var(--color-primary); color: var(--color-primary);
+  background: var(--color-primary-highlight);
+}
+
+/* Search summary */
+.search-summary {
+  background: var(--color-surface);
+  border-left: 3px solid var(--color-primary);
+  padding: var(--space-3) var(--space-4);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  margin-bottom: var(--space-6);
+  font-size: var(--text-sm); color: var(--color-text-muted);
+}
+.search-summary strong { color: var(--color-text); }
+
+/* Member grid */
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-4);
+}
+.member-card {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-sm);
+  display: flex; flex-direction: column; gap: var(--space-1);
+}
+.member-card:hover {
+  border-color: var(--color-primary-highlight);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+.member-name {
+  font-weight: 600; font-size: var(--text-base);
+  color: var(--color-text);
+}
+.member-term {
+  font-size: var(--text-xs); color: var(--color-text-faint);
+}
+.term-indicator {
+  display: inline-block; width: 8px; height: 8px;
+  border-radius: 50%; margin-right: 4px;
+}
+.term-indicator.expires-soon { background: var(--color-warning); }
+.term-indicator.ok { background: var(--color-success); }
+
+/* Multi-precinct prompt */
+.multi-precinct-prompt {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+.multi-precinct-prompt h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-lg); margin-bottom: var(--space-3);
+}
+.multi-precinct-prompt p {
+  font-size: var(--text-sm); color: var(--color-text-muted);
+  margin-bottom: var(--space-4);
+}
+.precinct-btn-group { display: flex; gap: var(--space-3); flex-wrap: wrap; }
+.precinct-select-btn {
+  padding: var(--space-3) var(--space-6);
+  background: var(--color-surface-2);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md); font-weight: 600;
+  font-size: var(--text-base); color: var(--color-text);
+}
+.precinct-select-btn:hover {
+  border-color: var(--color-primary); background: var(--color-primary-highlight);
+  color: var(--color-primary);
+}
+
+/* ─── About Section ──────────────────────────────────── */
+.about-section {
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-divider);
+  padding-block: clamp(var(--space-10), 5vw, var(--space-16));
+}
+.about-grid {
+  display: grid; gap: var(--space-8);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.about-card {
+  display: flex; flex-direction: column; gap: var(--space-3);
+}
+.about-icon {
+  width: 40px; height: 40px;
+  background: var(--color-primary-highlight);
+  border-radius: var(--radius-md);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--color-primary);
+}
+.about-card h3 {
+  font-size: var(--text-base); font-weight: 700;
+  color: var(--color-text);
+}
+.about-card p {
+  font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.6;
+}
+
+/* ─── Footer ──────────────────────────────────────────── */
+footer {
+  background: var(--color-surface-offset);
+  border-top: 1px solid var(--color-divider);
+  padding-block: var(--space-6);
+  font-size: var(--text-xs); color: var(--color-text-muted);
+}
+.footer-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: var(--space-4);
+}
+footer a { color: var(--color-text-muted); }
+footer a:hover { color: var(--color-primary); }
+.footer-links { display: flex; gap: var(--space-4); flex-wrap: wrap; }
+
+/* ─── Spinner ─────────────────────────────────────────── */
+.spinner {
+  width: 18px; height: 18px; flex-shrink: 0;
+  border: 2px solid var(--color-border);
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ─── Utility ─────────────────────────────────────────── */
+.hidden { display: none !important; }
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0;
+  margin: -1px; overflow: hidden; clip: rect(0,0,0,0);
+  white-space: nowrap; border-width: 0;
+}
+@media (max-width: 480px) {
+  .search-row { flex-direction: column; }
+  .search-btn { width: 100%; justify-content: center; }
+  .container { padding-inline: var(--space-4); }
+}
+</style>
+</head>
+<body>
+
+<!-- ─── Header ─────────────────────────────────────── -->
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <div class="logo-block">
+        <div class="logo-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </div>
+        <div>
+          <div class="site-title">Winchester TMMA</div>
+          <div class="site-subtitle">Town Meeting Member Lookup</div>
+        </div>
+      </div>
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode" title="Toggle dark mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ─── Hero / Search ──────────────────────────────── -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Find your <em>Town Meeting</em> representatives</h1>
+      <p class="hero-lead">
+        Winchester has 192 elected Town Meeting Members across 8 precincts — 24 per precinct.
+        Enter your street name to find the 24 members who represent your neighborhood.
+      </p>
+    </div>
+
+    <div class="search-card">
+      <label class="search-label" for="street-input">Your street name</label>
+      <div class="search-row">
+        <div class="suggestions-wrap">
+          <input
+            type="text"
+            id="street-input"
+            class="search-input"
+            placeholder="e.g. Main St, Highland Ave, Cambridge St…"
+            autocomplete="off"
+            autocorrect="off"
+            spellcheck="false"
+            aria-autocomplete="list"
+            aria-controls="suggestions-list"
+            aria-haspopup="listbox"
+          >
+          <ul
+            class="suggestions-list hidden"
+            id="suggestions-list"
+            role="listbox"
+            aria-label="Street suggestions"
+          ></ul>
+        </div>
+        <button class="search-btn" id="search-btn" type="button">
+          Look up
+        </button>
+      </div>
+      <p class="search-hint">
+        Street spans multiple precincts? We'll ask for your house number.
+        Data current as of January 2026 — 
+        <a href="https://www.winchestertmma.org/directory/by-precinct-1-8" target="_blank" rel="noopener">view official TMMA directory</a>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Results ────────────────────────────────────── -->
+<main>
+  <section class="results-section hidden" id="results-section">
+    <div class="container">
+      <div id="status-area"></div>
+      <div id="multi-precinct-area"></div>
+      <div id="results-area"></div>
+    </div>
+  </section>
+
+  <!-- About / How it works -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h3>192 elected members</h3>
+          <p>Winchester's Town Meeting is made up of 192 elected members, 24 from each of 8 precincts. Members serve staggered 3-year terms, with ~8 seats up for election each spring.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3>Representative Town Meeting</h3>
+          <p>Winchester uses a Representative (not Open) Town Meeting. Only elected members may vote. Town Meeting meets in spring and fall to vote on the budget, bylaws, and other town business.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+            </svg>
+          </div>
+          <h3>Contact your members</h3>
+          <p>Click any member's name to find their contact details on the <a href="https://www.winchestertmma.org/directory/by-name" target="_blank" rel="noopener">TMMA directory</a>. Members welcome constituent input before Town Meeting votes.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <h3>Not sure of your precinct?</h3>
+          <p>Use the <a href="https://www.sec.state.ma.us/WhereDoIVoteMA/WhereDoIVote" target="_blank" rel="noopener">MA Secretary of State voter lookup</a> or view the <a href="https://www.winchester.us/213/Precinct-Maps" target="_blank" rel="noopener">precinct maps</a> on the town website.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ─── Footer ─────────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        &copy; Winchester Town Meeting Members Association &middot;
+        Data current as of January 2026
+      </div>
+      <div class="footer-links">
+        <a href="https://www.winchestertmma.org" target="_blank" rel="noopener">TMMA Website</a>
+        <a href="https://www.winchester.us/241/Town-Meeting" target="_blank" rel="noopener">Town Meeting Info</a>
+        <a href="https://www.winchester.us/213/Precinct-Maps" target="_blank" rel="noopener">Precinct Maps</a>
+        <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
