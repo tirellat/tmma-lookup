@@ -24,12 +24,12 @@
 
   // Map aside
   const mapAside    = document.getElementById('map-aside');
-  const mapFrame    = document.getElementById('precinct-map-frame');
+  const mapImg      = document.getElementById('precinct-map-frame');
   const mapTitle    = document.getElementById('map-aside-title');
   const mapLink     = document.getElementById('map-aside-link');
 
-  // Precinct map URLs (from winchester.us)
-  const PRECINCT_MAP_URLS = {
+  // Precinct map PDF URLs (for the "Open full map" link)
+  const PRECINCT_MAP_PDF_URLS = {
     1: 'https://www.winchester.us/DocumentCenter/View/237/Precinct-1-PDF',
     2: 'https://www.winchester.us/DocumentCenter/View/238/Precinct-2-PDF',
     3: 'https://www.winchester.us/DocumentCenter/View/239/Precinct-3-PDF',
@@ -340,14 +340,15 @@
 
   // ── Precinct map ───────────────────────────────────────────
   function showPrecinctMap(precinct) {
-    const url = PRECINCT_MAP_URLS[precinct];
-    if (!url) return;
+    const pdfUrl = PRECINCT_MAP_PDF_URLS[precinct];
+    const imgSrc = 'maps/precinct-' + precinct + '.png';
     mapTitle.textContent = 'Precinct ' + precinct + ' Map';
-    mapLink.href = url;
-    // Only reload iframe if precinct changed (avoid flicker on re-render)
-    if (mapFrame.getAttribute('data-loaded-precinct') !== String(precinct)) {
-      mapFrame.src = url;
-      mapFrame.setAttribute('data-loaded-precinct', String(precinct));
+    mapLink.href = pdfUrl || '#';
+    // Only swap image if precinct changed (avoid flicker on re-render)
+    if (mapImg.getAttribute('data-loaded-precinct') !== String(precinct)) {
+      mapImg.src = imgSrc;
+      mapImg.alt = 'Precinct ' + precinct + ' map';
+      mapImg.setAttribute('data-loaded-precinct', String(precinct));
     }
     mapAside.classList.remove('hidden');
   }
