@@ -339,9 +339,9 @@ main { flex: 1; }
   text-decoration: none;
 }
 .map-aside-link:hover { text-decoration: underline; }
-.precinct-map-frame {
-  display: block; width: 100%; height: 420px;
-  border: none; background: var(--color-bg);
+.precinct-map-img {
+  display: block; width: 100%; height: auto;
+  background: var(--color-bg);
 }
 .house-row {
   display: flex; gap: var(--space-2); align-items: stretch;
@@ -729,13 +729,13 @@ footer a:hover { color: var(--color-primary); }
             <span class="map-aside-title" id="map-aside-title">Precinct Map</span>
             <a class="map-aside-link" id="map-aside-link" href="#" target="_blank" rel="noopener">Open full map ↗</a>
           </div>
-          <iframe
+          <img
             id="precinct-map-frame"
-            class="precinct-map-frame"
-            title="Precinct map"
+            class="precinct-map-img"
+            alt="Precinct map"
             loading="lazy"
             src=""
-          ></iframe>
+          />
         </aside>
       </div>
     </div>
