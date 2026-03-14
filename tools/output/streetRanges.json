@@ -1,0 +1,146 @@
+{
+  "BACON ST": [
+    {
+      "min": 1,
+      "max": 144,
+      "precinct": 3
+    },
+    {
+      "min": 1,
+      "max": 93,
+      "precinct": 4
+    }
+  ],
+  "CAMBRIDGE ST": [
+    {
+      "min": 5,
+      "max": 203,
+      "precinct": 5
+    },
+    {
+      "min": 10,
+      "max": 416,
+      "precinct": 7
+    }
+  ],
+  "CROSS ST": [
+    {
+      "min": 2,
+      "max": 219,
+      "precinct": 1
+    },
+    {
+      "min": 1,
+      "max": 400,
+      "precinct": 8
+    }
+  ],
+  "EATON ST": [
+    {
+      "min": 1,
+      "max": 74,
+      "precinct": 2
+    },
+    {
+      "min": 1,
+      "max": 186,
+      "precinct": 3
+    }
+  ],
+  "HIGHLAND AVE": [
+    {
+      "min": 2,
+      "max": 276,
+      "precinct": 1
+    },
+    {
+      "min": 2,
+      "max": 456,
+      "precinct": 3
+    }
+  ],
+  "LAKE ST": [
+    {
+      "min": 1,
+      "max": 61,
+      "precinct": 3
+    },
+    {
+      "min": 1,
+      "max": 50,
+      "precinct": 8
+    }
+  ],
+  "MAIN ST": [
+    {
+      "min": 3,
+      "max": 995,
+      "precinct": 3
+    },
+    {
+      "min": 1,
+      "max": 614,
+      "precinct": 4
+    }
+  ],
+  "MYSTIC VALLEY PKY": [
+    {
+      "min": 1,
+      "max": 249,
+      "precinct": 3
+    },
+    {
+      "min": 1,
+      "max": 84,
+      "precinct": 5
+    }
+  ],
+  "RIDGE ST": [
+    {
+      "min": 2,
+      "max": 174,
+      "precinct": 5
+    }
+  ],
+  "ROBINHOOD RD": [
+    {
+      "min": 2,
+      "max": 251,
+      "precinct": 5
+    },
+    {
+      "min": 1,
+      "max": 50,
+      "precinct": 6
+    }
+  ],
+  "SWANTON ST": [
+    {
+      "min": 1,
+      "max": 83,
+      "precinct": 2
+    },
+    {
+      "min": 44,
+      "max": 253,
+      "precinct": 8
+    }
+  ],
+  "WASHINGTON ST": [
+    {
+      "min": 1,
+      "max": 727,
+      "precinct": 1
+    },
+    {
+      "min": 232,
+      "max": 428,
+      "precinct": 2
+    },
+    {
+      "min": 2,
+      "max": 232,
+      "precinct": 3
+    }
+  ]
+}
