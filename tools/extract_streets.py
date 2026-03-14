@@ -59,12 +59,41 @@ SKIP_WORDS = {
     "N","O","P","Q","R","S","T","U","V","W","X","Y","Z",
 }
 
-Y_SNAP = 3  # snap y coordinates to this grid (pixels)
+Y_SNAP = 3  # used only for Street Index parsing (less sensitive)
+ROW_MAX_GAP = 5.0  # max vertical distance (px) to cluster words into same row
+# NOTE: PDF row pitch is ~8px; PCT column is consistently +1.4px below NAME column.
+# We use proximity-based clustering (group_words_into_rows) instead of fixed snap
+# to robustly handle this offset without merging adjacent rows.
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
 def snap_y(y, grid=Y_SNAP):
     return round(y / grid) * grid
+
+def group_words_into_rows(words, max_gap=ROW_MAX_GAP):
+    """
+    Group PDF words into logical rows by clustering on y-center.
+    Returns list of rows, each row is a list of (xc, word) tuples,
+    sorted by x within the row.
+    """
+    if not words:
+        return []
+    sorted_words = sorted(words, key=lambda w: (w[1] + w[3]) / 2)
+    rows = []
+    current_row = [sorted_words[0]]
+    current_y = (sorted_words[0][1] + sorted_words[0][3]) / 2
+    for w in sorted_words[1:]:
+        yc = (w[1] + w[3]) / 2
+        if abs(yc - current_y) <= max_gap:
+            current_row.append(w)
+            current_y = sum((ww[1]+ww[3])/2 for ww in current_row) / len(current_row)
+        else:
+            rows.append(current_row)
+            current_row = [w]
+            current_y = yc
+    rows.append(current_row)
+    # Convert to list of sorted (xc, word) tuples
+    return [sorted([((w[0]+w[2])/2, w[4]) for w in row], key=lambda t: t[0]) for row in rows]
 
 def in_range(x, rng):
     return rng[0] <= x <= rng[1]
@@ -191,6 +220,8 @@ def parse_alpha_list(doc):
     """
     Parse pages 106–211 (indices 105–210) — Alphabetical List.
     Returns list of {name, house, apt, street, precinct} dicts.
+    Uses proximity-based row clustering to handle the ~1.4px y-offset between
+    NAME and PCT columns in the PDF.
     """
     records = []
 
@@ -201,22 +232,18 @@ def parse_alpha_list(doc):
         if not words:
             continue
 
-        # Group words by (column, snapped_y)
-        rows = defaultdict(lambda: defaultdict(list))  # rows[col][y] = [(x, word)]
-        for w in words:
-            x0, y0, x1, y1, word = w[0], w[1], w[2], w[3], w[4]
-            xc = (x0 + x1) / 2
-            yc = snap_y((y0 + y1) / 2)
-            col = col_for_x(xc)
-            if col:
-                rows[col][yc].append((xc, word))
+        # Split words into left and right columns, then cluster each into rows
+        left_words  = [w for w in words if (w[0]+w[2])/2 <  310]
+        right_words = [w for w in words if (w[0]+w[2])/2 >= 310]
+
+        col_word_lists = [('L', left_words), ('R', right_words)]
 
         # Process each column
-        for col in ['L', 'R']:
-            if col not in rows:
+        for col, col_words in col_word_lists:
+            if not col_words:
                 continue
-            for y in sorted(rows[col].keys()):
-                row_words = sorted(rows[col][y], key=lambda t: t[0])
+            row_clusters = group_words_into_rows(col_words)
+            for row_words in row_clusters:  # row_words is list of (xc, word) sorted by x
 
                 # Classify each word by field
                 fields = defaultdict(list)
